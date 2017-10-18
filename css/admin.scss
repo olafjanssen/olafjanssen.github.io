@@ -1,0 +1,131 @@
+.project-container-admin {
+  padding-top: 4em;
+  margin: 0 auto;
+  width: 40em;
+}
+
+.project-container-admin-edit {
+  padding-top: 4em;
+  margin: 0 auto;
+  width: 40em;
+}
+
+.project-container-admin .project-item {
+  display: inline-block;
+  position: relative;
+  width: 30em;
+}
+
+.project-thumb {
+  box-shadow: 0 0 0 0.4em rgba(0, 0, 0, 0.6) inset;
+  filter: grayscale(100%);
+  border-radius: 10em;
+  background: #666;
+  height: 5em;
+  width: 5em;
+}
+
+.project-tag {
+  position: absolute;
+  background: #666;
+  color: #eee;
+  z-index: -1;
+  width: 20em;
+  height: 2em;
+  top: 1.5em;
+  left: 4em;
+  padding: 0.5em 2em;
+}
+
+.project-full {
+  padding: 0.5em 2em 0 1em;
+  margin: 1em -1em 2em;
+  display: block;
+  width: 40em;
+  right: 100%;
+  top: 0;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.project-full-blurp {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+#form-canvas {
+  display: none;
+}
+
+#editform {
+  display: block;
+  margin-bottom: 3em;
+
+  #image-loader {
+    display: none;
+  }
+
+  #image-preview {
+    background-size: cover;
+    display: inline-block;
+    border-radius: 10em;
+    background: #666;
+    height: 5em;
+    width: 5em;
+  }
+
+  label {
+    margin-bottom: 0.5em;
+    display: block;
+  }
+
+  input[type="text"], textarea {
+    margin: 0 0 1em 1em;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  // custom styling of the simpleMDE editor
+  .CodeMirror, .CodeMirror-scroll {
+    min-height: 10em;
+    height: auto;
+  }
+
+  button {
+    background-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0.5em 2em;
+    text-align: center;
+    cursor: hand;
+  }
+
+  button:hover {
+    background-color: #aaa;
+  }
+
+  button:active {
+    background-color: #999;
+  }
+
+  #saveButton {
+    border-color: #63a35c;
+  }
+
+  #closeButton {
+    border-color: #95a5a6;
+  }
+
+  #deleteButton {
+    border-color: #aa5500;
+
+  }
+
+}

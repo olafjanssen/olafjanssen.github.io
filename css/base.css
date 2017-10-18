@@ -1,0 +1,100 @@
+/*
+  CSS resets
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transform-style: preserve-3d; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+
+a.current {
+  font-weight: bold; }
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #222; }
+
+/*
+  Fonts
+ */
+@font-face {
+  font-family: CourierPrime;
+  src: url("../fonts/Courier Prime.ttf"); }
+/*
+Navigation menu with about and content
+  */
+.nav-panel {
+  font-family: "Helvetica Neue", sans-serif;
+  border-top: 2px solid #222;
+  display: inline-block;
+  position: absolute;
+  margin: 1em 1em 0;
+  padding: 0.5em 1em;
+  text-align: right;
+  width: 14em;
+  right: 0;
+  top: 0; }
+  .nav-panel::before {
+    border: 2px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 1em;
+    background: white;
+    display: block;
+    height: 0.5em;
+    left: -0.25em;
+    width: 0.5em;
+    top: -0.25em;
+    content: ""; }
+  .nav-panel h1 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.25em; }
+  .nav-panel li {
+    list-style: none;
+    font-size: 0.9em;
+    display: inline; }
+
+/*
+DNA Styling
+ */
+.project-container {
+  transform-style: preserve-3d;
+  width: 30em;
+  perspective: 1000px;
+  padding-top: 10em;
+  font-size: 0.6em;
+  margin: 0 auto 4em; }
+  .project-container .project-item {
+    display: inline-block;
+    width: 15em;
+    vertical-align: top;
+    position: relative; }
+  .project-container .project-thumb {
+    transform-style: preserve-3d;
+    height: 5em;
+    width: 5em;
+    box-shadow: 0 0 0 0.4em rgba(0, 0, 0, 0.6) inset;
+    filter: grayscale(100%);
+    border-radius: 10em;
+    background: #666; }
+  .project-container .project-tag {
+    position: absolute;
+    color: transparent;
+    background: #666;
+    width: 9.25em;
+    height: 1em;
+    top: 2em;
+    left: 5.5em; }
+  .project-container .project-item:nth-child(2n) .project-thumb {
+    position: relative;
+    left: 10em; }
+  .project-container .project-item:nth-child(2n) .project-tag {
+    left: auto;
+    right: 5.5em; }
+
+/*# sourceMappingURL=base.css.map */
