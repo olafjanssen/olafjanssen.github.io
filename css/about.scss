@@ -1,0 +1,94 @@
+.about-image {
+  background: #666 url('../img/about.jpg') center center;
+  background-size: cover;
+  margin: 3em 0 1em;
+  height: 10em;
+  width: 100%;
+}
+
+/*
+  CSS resets
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transform-style: preserve-3d;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a.current {
+  font-weight: bold;
+}
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #222;
+}
+
+/*
+  Fonts
+ */
+@font-face {
+  font-family: CourierPrime;
+  src: url('../fonts/Courier Prime.ttf');
+}
+
+@import "../node_modules/sassline/assets/sass/sassline-base";
+
+.project-container {
+  max-width: 33em;
+  margin: 0 auto;
+  padding: 4em 1em;
+
+  p {
+    text-align: justify;
+  }
+
+}
+
+/*
+Navigation menu with about and content
+  */
+.nav-panel {
+  font-family: "Helvetica Neue", sans-serif;
+  border-top: 2px solid #222;
+  display: inline-block;
+  position: absolute;
+  margin: 1em 1em 0;
+  padding: 0.5em 1em;
+  text-align: right;
+  z-index: 1;
+  right: 0;
+  top: 0;
+
+  &::before {
+    border: 2px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 1em;
+    background: white;
+    display: block;
+    height: 0.5em;
+    left: -0.25em;
+    width: 0.5em;
+    top: -0.25em;
+    content: "";
+  }
+
+  h1 {
+    font-size: 1.25em;
+    line-height: 0.5em;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+    font-size: 0.8em;
+    line-height:1.6em;
+  }
+}

@@ -1,0 +1,330 @@
+/*
+  CSS resets
+ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a.current {
+  font-weight: bold;
+}
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #222;
+}
+
+/*
+  Fonts
+ */
+@font-face {
+  src: url('../fonts/Courier Prime.ttf');
+  font-family: CourierPrime;
+}
+
+//@import "../node_modules/sassline/assets/sass/sassline-base";
+
+/*
+Navigation menu with about and content
+  */
+.nav-panel {
+  font-family: "Helvetica Neue", sans-serif;
+  border-top: 2px solid #222;
+  display: inline-block;
+  position: absolute;
+  margin: 1em 1em 0;
+  padding: 0.5em 1em;
+  text-align: right;
+  z-index: 1;
+  right: 0;
+  top: 0;
+
+  &::before {
+    border: 2px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 1em;
+    background: white;
+    display: block;
+    height: 0.5em;
+    left: -0.25em;
+    width: 0.5em;
+    top: -0.25em;
+    content: "";
+  }
+
+  h1 {
+    font-size: 1.25em;
+    line-height: 0.5em;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+    font-size: 0.8em;
+    line-height: 1.6em;
+  }
+}
+
+$dnaBaseWidth: 15em;
+
+/*
+DNA Styling
+ */
+.project-container {
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  width: 2*$dnaBaseWidth;
+  perspective: 1000px;
+  padding-top: 14em;
+  margin: 0 auto 20em;
+  line-height: 0.9rem;
+  font-size: 0.5em;
+
+  .project-item {
+    display: inline-block;
+    margin-bottom: 0.25em;
+    width: $dnaBaseWidth;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .project-thumb {
+    transform-style: preserve-3d;
+    height: 5em;
+    width: 5em;
+
+    box-shadow: 0 0 0 0.4em rgba(0, 0, 0, 0.6) inset;
+    filter: grayscale(100%);
+    border-radius: 10em;
+    background: #666;
+  }
+
+  .project-tag {
+    position: absolute;
+    color: transparent;
+    background: #666;
+    width: $dnaBaseWidth - 5.75em;
+    height: 1em;
+    top: 2em;
+    left: 5.5em;
+  }
+
+  .project-item:nth-child(2n) .project-thumb {
+    position: relative;
+    left: $dnaBaseWidth - 5em;
+  }
+
+  .project-item:nth-child(2n) .project-tag {
+    left: auto;
+    right: 5.5em;
+  }
+
+}
+
+/*
+Base Styling for the Project Slug
+ */
+.project-container .project-item {
+
+  .project-full {
+    border-top: 2px solid #222;
+    padding: 0.5em 2em 0 1em;
+    margin: 1em -1em 0;
+    position: absolute;
+    display: none;
+    z-index: -1;
+    width: 30em;
+    right: 100%;
+    top: 0;
+
+    &::before {
+      content: "";
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 1em;
+      border: 2px solid #222;
+      display: block;
+      position: absolute;
+      left: -0.25em;
+      top: -0.25em;
+      box-sizing: border-box;
+      background: white;
+    }
+  }
+
+  h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 1em;
+  }
+
+  .project-full-blurp {
+    display: none;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+
+  .project-full-date {
+    display: none;
+  }
+
+  .project-full-content {
+    display: none;
+  }
+}
+
+/*
+DNA animation styling
+ */
+.project-item {
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: transform 0.25s linear;
+
+  .project-thumb {
+    transition: transform 0.25s linear;
+  }
+}
+
+.project-tag {
+  opacity: 1;
+  border-radius: 0.5em;
+  z-index: -5;
+  transition: opacity 0.25s;
+}
+
+.project-item:nth-child(2n) {
+  transform-origin: left center;
+}
+
+/*
+Responsive styling
+ */
+@media only screen and (max-width: 880px) {
+  .project-overview {
+
+    .project-container {
+      filter: none !important;
+    }
+
+    .project-item {
+      display: block;
+      margin-bottom: 4em;
+
+      .project-full {
+        position: static;
+        display: block;
+      }
+
+      .project-full-blurp, .project-full-date {
+        display: block;
+      }
+
+      .project-tag {
+        display: none;
+      }
+    }
+
+    .project-item:nth-child(2n) .project-thumb {
+      left: 0em;
+    }
+
+  }
+}
+
+@media only screen and (min-width: 880px) {
+
+  /*
+Interactivity Styling for Project Slug
+ */
+  .project-container {
+
+    // show all project slugs when hovering over the DNA
+    &:hover .project-full {
+      display: block;
+    }
+
+    // in addition show the blurp and date when hovering over a specific project
+    .project-item:hover {
+
+      .project-thumb, .project-tag {
+        background: #999;
+      }
+
+      .project-full {
+        .project-full-blurp, .project-full-date {
+          display: block;
+        }
+      }
+
+      // hide following projects _below_ the other one to give room to the blurp text
+      & + .project-item + .project-item,
+      & + .project-item + .project-item + .project-item + .project-item,
+      & + .project-item + .project-item + .project-item + .project-item + .project-item + .project-item {
+        .project-full {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .project-container {
+    .project-item:not(.selected):nth-child(2n) {
+      .project-full {
+        padding: 0.5em 1em 0 2em;
+        margin: 1em 0 0 -1em;
+        right: auto;
+        left: 100%;
+        top: 0;
+
+        &::before {
+          right: -0.25em;
+          top: -0.25em;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+/* Wall of ideas */
+.wallofideas {
+  max-width: 2*$dnaBaseWidth;
+  margin: 0 auto 20em;
+  text-align: justify;
+  padding-top: 10em;
+  display: block;
+
+  .idea-item {
+    display: inline;
+
+    h2:hover {
+      cursor: pointer;
+      background: #bbb;
+
+      & + p {
+        display: block;
+        margin-bottom: 1em;
+      }
+    }
+
+    h2 {
+      display: inline;
+      background: #eee;
+      padding: 0.1em 0;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}
