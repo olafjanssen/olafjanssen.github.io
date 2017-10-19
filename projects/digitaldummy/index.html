@@ -5,7 +5,7 @@
     <title>
         Digital Dummy
     </title>
-    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+    <meta name="description" content="An experiment in creating a module for the LMS system Instructure Canvas. It is a blog-like portfolio for students to show their daily progress in an easy accessible way.">
 
     <meta property="og:title" content="Digital Dummy">
     <meta property="og:type" content="article">
@@ -51,7 +51,7 @@
                 Digital Dummy
             </h1>
             <p class="project-full-blurp">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                An experiment in creating a module for the LMS system Instructure Canvas. It is a blog-like portfolio for students to show their daily progress in an easy accessible way.
             </p>
             <p class="project-full-date">
                 <span class="date">August 2016</span>
@@ -63,7 +63,39 @@
 
             </p>
             <div id="cnt-digitaldummy" class="project-full-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 id="the-situation">The situation</h2>
+<p>IT &amp; Media Students at Fontys University of Applied Sciences get fewer and fewer lectures. They build up a portfolio of their work. Not necessarily their best work, but everthing they did in the process of getting where they are now. They are assessed on the content of this portfolio. During the semester they can ask feedback, but in practice many students wait till the last moment before compiling their portfolio. By that time, they have lost the failures, old prototypes, first drafts and their motives for making changes and improvements.</p>
+<p>As a coordinator for the third semester and supervising an overhaul of the form, themes and content of the semester I asked myself the following question:</p>
+<p><code>How can I use the available Learning Management System (LMS) for this semester that allows for provisional assessment and feed-forward on the experimental learning journey of the individual students?</code></p>
+<h2 id="design-and-implementation">Design and implementation</h2>
+<p>The LMS system (Instructure Canvas) is a given and everything a student does should ideally be reflected in this system. To be able to give feedback and feed-forward to students, students must be able to show what they have done in the last week(s). I set the following design challenge:</p>
+<p><code>Design an easy accessible digital portfolio that allows students to store their daily progress in the Canvas environment, such that the level of self-reflection and feed-forward of the teachers is increased.</code></p>
+<p>Because first and failed attempts are often thrown away and especially from those attempts a student can show its progress, we would like to motivate students to at least make note of these attempts. The product should be easy and accessible enough so it doesn&#39;t pull students out of their flow. To ensure a safe learning environment, their work should be stored in a private environment.</p>
+<p>Must haves: </p>
+<ul>
+<li>The student&#39;s process should be clear for both the student and the teacher.</li>
+<li>Pictures and video&#39;s should be easily uploaded from smartphones.</li>
+<li>Uploaded work should, in principle, only be accessible to the student and his teachers.</li>
+</ul>
+<p>Should haves:</p>
+<ul>
+<li>All forms of data that Canvas allows should be directly visible and not hidden behind links.</li>
+<li>A fallback must exist if the implemented product breaks down.</li>
+</ul>
+<p>Could haves:</p>
+<ul>
+<li>It should load faster than the standard Canvas elements.</li>
+<li>At the end of the semester the portfolio should be downloadable.</li>
+<li>Teachers can give feedback directly in the portfolio.</li>
+</ul>
+<p>Of course existing services are an option. However, externe (micro)blog sites zoals Tumblr, Pinterest, Twitter, WordPress are usually limited in the types of data they allow or show in a friendly fashion. Data is usually stored on overseas servers which is not what we want with student material and privacy settings can be difficult or impossible. There are existing services for Canvas but they are usually bulky, store their own data and have no elegant mobile solution for uploading photos and videos.</p>
+<p>The product, called Digital Dummy, is a webpage following the the Learning Tools Interoperability (LTI) standard. In this way, Canvas is used for the secure storage of the data and the product appears in the Canvas course menu. The Digital Dummy is a special view wrapped around a standard Canvas assignment that students resubmit to. If the  Digital Dummy breaks down, all the data is still accessible using the standard Canvas interface. By showing all submissions at once in a format that looks like a blog, one can easily scroll through all the work. To show all file formats directly the Crocodoc system that Canvas uses itself is used.</p>
+<p>By using smart and lazy loading of data using the infinite scroll principle, the Digital Dummy works relatively fast. The bottleneck being of course the API calls to the Canvas server.</p>
+<p>Because the Digital Dummy is in essence a responsive webpage, from the Canvas app we can link to a mobile friendly version of the Digital Dummy. This page can be saved on the home screen of your smartphone and allows for uploading video&#39;s with only two finger touches.</p>
+<p>The final product can be found on GitHub: <a href="https://github.com/olafjanssen/digitaldummy">github.com/olafjanssen/digitaldummy</a>.</p>
+<h2 id="demo">Demo</h2>
+<p>A demo of the product with Dutch explanation for the students. The product has, since then, improved a bit in functionality and look &amp; feel.</p>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/TypSn1CsCoM" frameborder="0" allowfullscreen></iframe></div>
 
             </div>
         </article>

@@ -1,5 +1,5 @@
 ---
-title: Smoishele: FaceBlender for the Web
+title: "Smoishele: FaceBlender for the Web"
 tag: smoishele
 image: 
 description: 
