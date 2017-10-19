@@ -16,12 +16,13 @@ I have collected the cartoons in the [Flurry Flakes Facebook group](https://www.
 
 ## Toddler Logic cartoons
 <div class="embed-container">
-</div>
-<a data-flickr-embed="false"  href="https://www.flickr.com/photos/95999935@N05/albums/72157684102994585" title="Toddler Logic"><img src="https://farm5.staticflickr.com/4276/34674412581_39a88648cd_z.jpg" width="640" height="640" alt="Toddler Logic"></a>
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157684102994585&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a href="https://www.flickr.com/photos/95999935@N05/albums/72157684102994585">Flickr album</a></small>
 
 ## Baby Zen cartoons
 <div class="embed-container">
-<iframe src="https://www.flickr.com/photos/95999935@N05/albums/72157680976127764/player" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157680976127764&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a href="https://www.flickr.com/photos/95999935@N05/albums/72157680976127764">Flickr album</a></small>
 
 
 ## Reflection

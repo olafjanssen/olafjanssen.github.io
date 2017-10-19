@@ -784,7 +784,7 @@ a {
   max-width: 100%; }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100%;
