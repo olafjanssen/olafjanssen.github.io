@@ -12,70 +12,68 @@
     <meta property="og:image" content="img/thumbs/th_29.png">
     <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
 
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../../css/project.css">
     <link rel="stylesheet" type="text/css" href="../../css/prism.css">
 
-    <script type="application/javascript" src="../../bower_components/showdown/dist/showdown.min.js"></script>
     <script type="application/javascript" src="../../js/prism.js"></script>
 </head>
 
 <body>
 
-    <div class="nav-panel typeset">
-        <h1>Olaf T.A. Janssen</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/about">Me</a>
-                </li>
-                <li>
-                    <a href="/">Projects</a>
-                </li>
-                <!--<li>-->
-                    <!--<a href="../ideas">Ideas</a>-->
-                <!--</li>-->
-            </ul>
-        </nav>
-    </div>
+<div class="nav-panel typeset">
+    <h1>Olaf T.A. Janssen</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about">Me</a>
+            </li>
+            <li>
+                <a href="/">Projects</a>
+            </li>
+            <!--<li>-->
+            <!--<a href="../ideas">Ideas</a>-->
+            <!--</li>-->
+        </ul>
+    </nav>
+</div>
 
-    <section class="project-container typeset">
-        <section class="project-item" data-tag="humancirculation">
-            <a href="/">
-        <div class="project-thumb"
-             style="background-image:url('../../img/thumbs/th_29.png'); background-position:center; background-size:cover;"></div>
-    </a>
-            <article class="project-full typeset">
-                <h1>
-                    Lumped Parameter Model of the Human Circulation
-                </h1>
-                <p class="project-full-blurp">
-                    This is the result of research conducted as a group at the Acedemic Hospital Maastricht during my study of Applied Physics. The aim of this study was to upgrade an existing lumped parameter computer model of the human heart to make it more physiologically correct. By fine tuning the model the model could become a very powerful tool for cardiologists in the future.
-                </p>
-                <p class="project-full-date">
-                    <span class="date">November 2002</span>
-                    <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<section class="project-container typeset">
+    <section class="project-item" data-tag="humancirculation">
+        <a href="/">
+            <div class="project-thumb"
+                 style="background-image:url('../../img/thumbs/th_29.png'); background-position:center; background-size:cover;"></div>
+        </a>
+        <article class="project-full typeset">
+            <h1>
+                Lumped Parameter Model of the Human Circulation
+            </h1>
+            <p class="project-full-blurp">
+                This is the result of research conducted as a group at the Acedemic Hospital Maastricht during my study of Applied Physics. The aim of this study was to upgrade an existing lumped parameter computer model of the human heart to make it more physiologically correct. By fine tuning the model the model could become a very powerful tool for cardiologists in the future.
+            </p>
+            <p class="project-full-date">
+                <span class="date">November 2002</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
             <a class="a2a_button_facebook"></a>
             <a class="a2a_button_twitter"></a>
             <a class="a2a_button_linkedin"></a>
         </span>
 
-                </p>
-                <div id="cnt-humancirculation" class="project-full-content">
-                    <h2 id="the-report">The Report</h2>
+            </p>
+            <div id="cnt-humancirculation" class="project-full-content">
+                <h2 id="the-report">The Report</h2>
 <p>The report was written as a group effort, but the coding was done mainly by me. It was the first time for me to work and program in Matlab. Coding work consisted for a large part in adjusting the existing model and code base. Read the full <a href="https://www.dropbox.com/s/ffu8w9awva1g06n/MDP_report.pdf?dl=0">report.pdf</a>.</p>
 <h2 id="abstract">Abstract</h2>
 <p>The aim of this study was to upgrade an existing lumped parameter computer model of the human heart to make it more physiologically correct. The developed model now consists of a full circulation containing a pair of ventricles, atria, valves, arteries and venes. Special attention is given to the timing of the mitral and tricuspid valve, the sarcomere behavior, interaction between left and right ventricle and the introduction of a VSD and an ASD. Also an adaptation mechanism is present to adjust the sarcomere parameters to the load of pump work that is done. Overall the developed model gives physiologically correct results, but needs some fine tuning. By fine tuning the model and adding the possibility of scaling the model’s hemodynamics to a certain age, length and gender, the model could become a very powerful tool for cardiologists in the future.</p>
 
-                </div>
-            </article>
-        </section>
-
-        <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+        </article>
     </section>
+
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+</section>
 
 </body>
 <script>
@@ -86,6 +84,11 @@
 
         document.body.appendChild(script);
     }
-    loadFlickRCode();
+
+    window.onload = function () {
+        console.log('trying flickr now');
+        loadFlickRCode();
+    }
+
 </script>
 </html>

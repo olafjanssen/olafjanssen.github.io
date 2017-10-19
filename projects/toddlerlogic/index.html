@@ -12,60 +12,58 @@
     <meta property="og:image" content="img/thumbs/th_38.png">
     <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
 
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../../css/project.css">
     <link rel="stylesheet" type="text/css" href="../../css/prism.css">
 
-    <script type="application/javascript" src="../../bower_components/showdown/dist/showdown.min.js"></script>
     <script type="application/javascript" src="../../js/prism.js"></script>
 </head>
 
 <body>
 
-    <div class="nav-panel typeset">
-        <h1>Olaf T.A. Janssen</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/about">Me</a>
-                </li>
-                <li>
-                    <a href="/">Projects</a>
-                </li>
-                <!--<li>-->
-                    <!--<a href="../ideas">Ideas</a>-->
-                <!--</li>-->
-            </ul>
-        </nav>
-    </div>
+<div class="nav-panel typeset">
+    <h1>Olaf T.A. Janssen</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about">Me</a>
+            </li>
+            <li>
+                <a href="/">Projects</a>
+            </li>
+            <!--<li>-->
+            <!--<a href="../ideas">Ideas</a>-->
+            <!--</li>-->
+        </ul>
+    </nav>
+</div>
 
-    <section class="project-container typeset">
-        <section class="project-item" data-tag="toddlerlogic">
-            <a href="/">
-        <div class="project-thumb"
-             style="background-image:url('../../img/thumbs/th_38.png'); background-position:center; background-size:cover;"></div>
-    </a>
-            <article class="project-full typeset">
-                <h1>
-                    Toddler Logic and Baby Zen
-                </h1>
-                <p class="project-full-blurp">
-                    The webcomics Toddler Logic and Baby Zen. All 100% true stories about my two little boys, all drawn on my iPad! Well mostly true, and mostly on my iPad.
-                </p>
-                <p class="project-full-date">
-                    <span class="date">November 2012</span>
-                    <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<section class="project-container typeset">
+    <section class="project-item" data-tag="toddlerlogic">
+        <a href="/">
+            <div class="project-thumb"
+                 style="background-image:url('../../img/thumbs/th_38.png'); background-position:center; background-size:cover;"></div>
+        </a>
+        <article class="project-full typeset">
+            <h1>
+                Toddler Logic and Baby Zen
+            </h1>
+            <p class="project-full-blurp">
+                The webcomics Toddler Logic and Baby Zen. All 100% true stories about my two little boys, all drawn on my iPad! Well mostly true, and mostly on my iPad.
+            </p>
+            <p class="project-full-date">
+                <span class="date">November 2012</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
             <a class="a2a_button_facebook"></a>
             <a class="a2a_button_twitter"></a>
             <a class="a2a_button_linkedin"></a>
         </span>
 
-                </p>
-                <div id="cnt-toddlerlogic" class="project-full-content">
-                    <h2 id="inspiration">Inspiration</h2>
+            </p>
+            <div id="cnt-toddlerlogic" class="project-full-content">
+                <h2 id="inspiration">Inspiration</h2>
 <p>After a long lull without drawing anything, I decided to start taking up on it again. At the time my eldest son was 3 years old but with the vocabulary and eloquence of a 6 year old. The only way to preserve these spontaneous conversations with him was to remember and draw cartoons. My second son was just going from baby to toddler but his presence is more physical than verbal (still is). He ended up in a shorter series of Baby Zen cartoons.</p>
 <p>I have collected the cartoons in the <a href="https://www.facebook.com/FlurryFlakes/">Flurry Flakes Facebook group</a>.</p>
 <h2 id="toddler-logic-cartoons">Toddler Logic cartoons</h2>
@@ -81,12 +79,12 @@
 <h2 id="reflection">Reflection</h2>
 <p>I was still experimenting a lot with drawing on my iPad, which you can see in the very different drawing styles. In the end I settled into using Illustrator to redraw all my handdrawn cartoons with a cleaner vector look. All-in-all the process of going from idea, to sketch to final version took me a lot of time and effort so in the end I gave up on keeping up a daily or weekly webcomic. It just didn&#39;t feel right for me.</p>
 
-                </div>
-            </article>
-        </section>
-
-        <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+        </article>
     </section>
+
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+</section>
 
 </body>
 <script>
@@ -97,6 +95,11 @@
 
         document.body.appendChild(script);
     }
-    loadFlickRCode();
+
+    window.onload = function () {
+        console.log('trying flickr now');
+        loadFlickRCode();
+    }
+
 </script>
 </html>

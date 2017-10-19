@@ -12,60 +12,58 @@
     <meta property="og:image" content="img/thumbs/th_21.png">
     <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
 
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../../css/project.css">
     <link rel="stylesheet" type="text/css" href="../../css/prism.css">
 
-    <script type="application/javascript" src="../../bower_components/showdown/dist/showdown.min.js"></script>
     <script type="application/javascript" src="../../js/prism.js"></script>
 </head>
 
 <body>
 
-    <div class="nav-panel typeset">
-        <h1>Olaf T.A. Janssen</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/about">Me</a>
-                </li>
-                <li>
-                    <a href="/">Projects</a>
-                </li>
-                <!--<li>-->
-                    <!--<a href="../ideas">Ideas</a>-->
-                <!--</li>-->
-            </ul>
-        </nav>
-    </div>
+<div class="nav-panel typeset">
+    <h1>Olaf T.A. Janssen</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about">Me</a>
+            </li>
+            <li>
+                <a href="/">Projects</a>
+            </li>
+            <!--<li>-->
+            <!--<a href="../ideas">Ideas</a>-->
+            <!--</li>-->
+        </ul>
+    </nav>
+</div>
 
-    <section class="project-container typeset">
-        <section class="project-item" data-tag="aliencliche">
-            <a href="/">
-        <div class="project-thumb"
-             style="background-image:url('../../img/thumbs/th_21.png'); background-position:center; background-size:cover;"></div>
-    </a>
-            <article class="project-full typeset">
-                <h1>
-                    Alien Cliché: A Physics Based Shooter
-                </h1>
-                <p class="project-full-blurp">
-                    A 2D game I wrote in Pascal using Assembler for the VGA graphics. You shoot missiles that are attracted by the gravity of multiple planets. It can be seen as the forerunner of Angry Birds Space, but without birds and with a background story packed with 90ies nostalgia events.
-                </p>
-                <p class="project-full-date">
-                    <span class="date">August 1998</span>
-                    <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<section class="project-container typeset">
+    <section class="project-item" data-tag="aliencliche">
+        <a href="/">
+            <div class="project-thumb"
+                 style="background-image:url('../../img/thumbs/th_21.png'); background-position:center; background-size:cover;"></div>
+        </a>
+        <article class="project-full typeset">
+            <h1>
+                Alien Cliché: A Physics Based Shooter
+            </h1>
+            <p class="project-full-blurp">
+                A 2D game I wrote in Pascal using Assembler for the VGA graphics. You shoot missiles that are attracted by the gravity of multiple planets. It can be seen as the forerunner of Angry Birds Space, but without birds and with a background story packed with 90ies nostalgia events.
+            </p>
+            <p class="project-full-date">
+                <span class="date">August 1998</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
             <a class="a2a_button_facebook"></a>
             <a class="a2a_button_twitter"></a>
             <a class="a2a_button_linkedin"></a>
         </span>
 
-                </p>
-                <div id="cnt-aliencliche" class="project-full-content">
-                    <h2 id="features">Features</h2>
+            </p>
+            <div id="cnt-aliencliche" class="project-full-content">
+                <h2 id="features">Features</h2>
 <ul>
 <li>256 color VGA graphics using Assembler code within Pascal</li>
 <li>Pascal code for the game logic</li>
@@ -1325,12 +1323,12 @@ ShutDown;
 SetText;
 
 END.</code></pre>
-                </div>
-            </article>
-        </section>
-
-        <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+        </article>
     </section>
+
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+</section>
 
 </body>
 <script>
@@ -1341,6 +1339,11 @@ END.</code></pre>
 
         document.body.appendChild(script);
     }
-    loadFlickRCode();
+
+    window.onload = function () {
+        console.log('trying flickr now');
+        loadFlickRCode();
+    }
+
 </script>
 </html>
