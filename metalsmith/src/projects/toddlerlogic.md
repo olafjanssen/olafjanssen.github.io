@@ -16,9 +16,8 @@ I have collected the cartoons in the [Flurry Flakes Facebook group](https://www.
 
 ## Toddler Logic cartoons
 <div class="embed-container">
-<iframe src="https://www.flickr.com/photos/95999935@N05/albums/72157684102994585/player" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/95999935@N05/albums/72157684102994585" title="Toddler Logic"><img src="https://farm5.staticflickr.com/4276/34674412581_39a88648cd_z.jpg" width="640" height="640" alt="Toddler Logic"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+</div>
+<a data-flickr-embed="false"  href="https://www.flickr.com/photos/95999935@N05/albums/72157684102994585" title="Toddler Logic"><img src="https://farm5.staticflickr.com/4276/34674412581_39a88648cd_z.jpg" width="640" height="640" alt="Toddler Logic"></a>
 
 ## Baby Zen cartoons
 <div class="embed-container">
