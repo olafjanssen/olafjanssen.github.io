@@ -12,7 +12,8 @@ layout: project.html
 Somewhere in 1997 I spent a lot of time drawing with a close friend. Actually, we had been drawing for years, but always on seperate drawings. Mostly, absurd monsters and robots and landscapes but later also one page comics. None of them survived. Except this one.
 
 <div class="embed-container">
-<iframe src="https://www.flickr.com/photos/95999935@N05/albums/72157680155616263/player" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157680155616263&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a target="_blank" href="https://www.flickr.com/photos/95999935@N05/albums/72157680155616263">Flickr album</a></small>
 
 ## How it came about
 

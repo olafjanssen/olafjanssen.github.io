@@ -15,7 +15,8 @@ I have collected the cartoons also in the [Flurry Flakes Facebook group](https:/
 
 ## The cartoons
 <div class="embed-container">
-<iframe src="https://www.flickr.com/photos/95999935@N05/albums/72157683979173436/player" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157683979173436&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a target="_blank" href="https://www.flickr.com/photos/95999935@N05/albums/72157683979173436">Flickr album</a></small>
 
 ## Reflection
 While it was fun to do, freestyle drawing on an iPad remains frustrating to do, I just can't get the same feel as with pencil on paper and the results aren't great. I'm still struggling with being tall so I should probably keep adding more cartoons to it for it to stay cathartic.

@@ -1,5 +1,5 @@
 ---
-title: RoadToNowhere: Trip & Trapped
+title: "RoadToNowhere: Trip & Trapped"
 tag: roadtonowhere
 image: th_34.png
 description: RoadToNowhere is the start of a sprite-based 2D game written in Pascal and assembler for VGA graphics. It is mouse operated and has self-driving AI for cars driving around the town. There are no game elements in it but the simulation part works and the game is interactive.
@@ -26,7 +26,9 @@ With the experience of Alien Cliché, I wanted to continue my quest for interact
 
 First I started with creating a sprite-based map and designed tiles in *Photoshop*. The tiles showed basic road and scenery so I could start testing an actual map.
 
-<a data-flickr-embed="true" data-header="true"  href="https://www.flickr.com/photos/95999935@N05/albums/72157680281266943" title="RoadToNowhere"><img src="https://c1.staticflickr.com/5/4192/33634791343_f86cef6104_z.jpg" width="640" height="371" alt="RoadToNowhere"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<div class="embed-container">
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157680281266943&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a target="_blank" href="https://www.flickr.com/photos/95999935@N05/albums/72157680281266943">Flickr album</a></small>
 
 The tiles are stored in individual `.pcx` files. In a text file I defined a map in which each character represented a tile (with rotation). For some reason I used very inaccessible characters. 
 

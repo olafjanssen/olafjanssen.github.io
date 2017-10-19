@@ -1,4 +1,69 @@
-<h3 id="features">Features</h3>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        RoadToNowhere: Trip &amp; Trapped
+    </title>
+    <meta name="description" content="RoadToNowhere is the start of a sprite-based 2D game written in Pascal and assembler for VGA graphics. It is mouse operated and has self-driving AI for cars driving around the town. There are no game elements in it but the simulation part works and the game is interactive.">
+
+    <meta property="og:title" content="RoadToNowhere: Trip &amp; Trapped">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/img/thumbs/th_34.png">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/project.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+
+    <script type="application/javascript" src="/js/prism.js"></script>
+</head>
+
+<body>
+
+<div class="nav-panel typeset">
+    <h1>Olaf T.A. Janssen</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about">Me</a>
+            </li>
+            <li>
+                <a href="/">Projects</a>
+            </li>
+            <!--<li>-->
+            <!--<a href="../ideas">Ideas</a>-->
+            <!--</li>-->
+        </ul>
+    </nav>
+</div>
+
+<section class="project-container typeset">
+    <section class="project-item" data-tag="roadtonowhere">
+        <a href="/">
+            <div class="project-thumb"
+                 style="background-image:url('../../img/thumbs/th_34.png'); background-position:center; background-size:cover;"></div>
+        </a>
+        <article class="project-full typeset">
+            <h1>
+                RoadToNowhere: Trip &amp; Trapped
+            </h1>
+            <p class="project-full-blurp">
+                RoadToNowhere is the start of a sprite-based 2D game written in Pascal and assembler for VGA graphics. It is mouse operated and has self-driving AI for cars driving around the town. There are no game elements in it but the simulation part works and the game is interactive.
+            </p>
+            <p class="project-full-date">
+                <span class="date">September 1998</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_linkedin"></a>
+        </span>
+
+            </p>
+            <div id="cnt-roadtonowhere" class="project-full-content">
+                <h3 id="features">Features</h3>
 <ul>
 <li>256 color VGA graphics using Assembler code within Pascal</li>
 <li>Pascal code for the game logic</li>
@@ -15,7 +80,9 @@
 <h3 id="process">Process</h3>
 <p>With the experience of Alien Cliché, I wanted to continue my quest for interactive visual simulations. This time I was inspired by <em>Grand Theft Auto 1</em> (1997). In this game, cars drive around the town and interact with the player&#39;s car. This fascinated to the extend that I wanted to recreate this. Instead of driving a car myself, as in Grand Theft Auto, I wanted to control the player&#39;s car with the mouse the way you control units in <em>Dune 2</em> (1992) or <em>Command &amp; Conquer 1</em> (1995).</p>
 <p>First I started with creating a sprite-based map and designed tiles in <em>Photoshop</em>. The tiles showed basic road and scenery so I could start testing an actual map.</p>
-<p><a data-flickr-embed="true" data-header="true"  href="https://www.flickr.com/photos/95999935@N05/albums/72157680281266943" title="RoadToNowhere"><img src="https://c1.staticflickr.com/5/4192/33634791343_f86cef6104_z.jpg" width="640" height="371" alt="RoadToNowhere"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><div class="embed-container">
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157680281266943&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a target="_blank" href="https://www.flickr.com/photos/95999935@N05/albums/72157680281266943">Flickr album</a></small></p>
 <p>The tiles are stored in individual <code>.pcx</code> files. In a text file I defined a map in which each character represented a tile (with rotation). For some reason I used very inaccessible characters. </p>
 <pre><code>ggg1121212112212111g
 ggg2…ÕÕÕÕÕÀÕÕÕÕÕÕª1g
@@ -202,3 +269,13 @@ void loadsprites(void)
  cout &lt;&lt; &quot;+ loaded: &quot; &lt;&lt; fname &lt;&lt; &quot;\n&quot;;
     }
 }</code></pre>
+
+            </div>
+        </article>
+    </section>
+
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+</section>
+
+</body>
+</html>

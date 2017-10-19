@@ -1,5 +1,5 @@
 ---
-title: Scene Alpha: Lunar Lullaby
+title: "Scene Alpha: Lunar Lullaby"
 tag: scenealpha
 image: th_18.png
 description: Combined effort with a friend of creating a full scene in 3D with multiple shots and with audio. The scene was the teaser to the full movie that was the goal of a collaborative movie project TheProjectV1.
@@ -46,7 +46,9 @@ The view fades to black and the person is left paralysed.
 ```
 
 ### Storyboard
-<a data-flickr-embed="true" data-header="true"  href="https://www.flickr.com/photos/95999935@N05/albums/72157681210611641" title="Scene Alpha"><img src="https://c1.staticflickr.com/5/4163/34272144691_33c8eef5e4_c.jpg" width="640" height="453" alt="Scene Alpha"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<div class="embed-container">
+        <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157681210611641&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div><small><a target="_blank" href="https://www.flickr.com/photos/95999935@N05/albums/72157681210611641">Flickr album</a></small>
 
 
 ### My Little Scenery
