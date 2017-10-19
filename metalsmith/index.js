@@ -3,20 +3,34 @@ var markdown    = require('metalsmith-markdown');
 var collections = require('metalsmith-collections');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
+var dateFormatter = require('metalsmith-date-formatter');
+
 
 Metalsmith(__dirname)
   .metadata({
-    title: "My Static Site & Blog",
+    title: "Portfolio of Olaf T.A. Janssen",
     description: "It's about saying »Hello« to the World.",
     generator: "Metalsmith",
-    url: "http://www.metalsmith.io/"
+    url: "https://olafjanssen.github.io/"
   })
   .source('./src')
   .destination('../')
   .clean(false)
-    .use(collections({          // group all blog posts by internally
-        projects: 'projects/*.md'       // adding key 'collections':'posts'
-    }))                         // use `collections.posts` in layouts
+    .use(collections({
+        projects: {
+            pattern: 'projects/*.md',
+            sortBy: 'date',
+            reverse: true
+        }
+    }))
+    .use(dateFormatter({
+        dates: [
+            {
+                key: 'date',
+                format: 'MMMM YYYY'
+            }
+        ]
+    }))
   .use(markdown())
   .use(permalinks())
   .use(layouts({

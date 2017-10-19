@@ -770,6 +770,9 @@ a {
     filter: grayscale(100%);
     border-radius: 10em;
     background: #666; }
+  .project-container .date {
+    font-style: italic;
+    white-space: nowrap; }
   .project-container .project-tag {
     display: none; }
 

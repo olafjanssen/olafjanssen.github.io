@@ -1,5 +1,5 @@
 ---
-title: Alien Cliché, A Physics Based Shooter
+title: "Alien Cliché: A Physics Based Shooter"
 tag: aliencliche
 image: th_21.png
 description: A 2D game I wrote in Pascal using Assembler for the VGA graphics. You shoot missiles that are attracted by the gravity of multiple planets. It can be seen as the forerunner of Angry Birds Space, but without birds and with a background story packed with 90ies nostalgia events.

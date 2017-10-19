@@ -30,24 +30,23 @@
         <nav>
             <ul>
                 <li>
-                    <a href="../about">Me</a>
+                    <a href="/about">Me</a>
                 </li>
                 <li>
-                    <a href="../projects">Projects</a>
+                    <a href="/">Projects</a>
                 </li>
-                <li>
-                    <a href="../ideas">Ideas</a>
-                </li>
+                <!--<li>-->
+                    <!--<a href="../ideas">Ideas</a>-->
+                <!--</li>-->
             </ul>
         </nav>
     </div>
 
     <section class="project-container typeset">
         <section class="project-item" data-tag="{{ tag }}">
-            <a href="projects/{{ tag }}">
+            <a href="/">
         <div class="project-thumb"
              style="background-image:url('../../img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div>
-        <div class="project-tag">{{ tag }}</div>
     </a>
             <article class="project-full typeset">
                 <h1>
@@ -77,11 +76,3 @@
 </body>
 
 </html>
-
-<script>
-    document.body.classList.add('project-selected');
-    var element = document.querySelector('[data-tag]');
-    element.classList.add('selected');
-    element.querySelector('a').href = '../';
-
-</script>

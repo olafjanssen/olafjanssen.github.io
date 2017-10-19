@@ -3,9 +3,8 @@
  */
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  transform-style: preserve-3d;
+  margin: 0;
 }
 
 a {
@@ -26,19 +25,30 @@ html {
   Fonts
  */
 @font-face {
-  font-family: CourierPrime;
   src: url('../fonts/Courier Prime.ttf');
+  font-family: CourierPrime;
 }
 
 @import "../node_modules/sassline/assets/sass/sassline-base";
 
 .project-container {
+  padding: 10em 1em;
+  position: relative;
   max-width: 33em;
   margin: 0 auto;
-  padding: 4em 1em;
+  font-size: 80%;
 
   p {
     text-align: justify;
+  }
+
+  time {
+    font-style: italic;
+    white-space: nowrap;
+
+    &::before {
+      content: "\2014";
+    }
   }
 
   pre {
@@ -46,40 +56,16 @@ html {
   }
 
   .project-thumb {
-    height: 8em;
-    width: 8em;
-
     box-shadow: 0 0 0 0.4em rgba(0, 0, 0, 0.6) inset;
     filter: grayscale(100%);
+    vertical-align: middle;
     border-radius: 10em;
+    position: absolute;
     background: #666;
+    height: 4em;
+    left: -4em;
+    width: 4em;
   }
-
-  .date {
-    font-style: italic;
-    white-space: nowrap;
-  }
-
-  .project-tag {
-    display: none;
-  }
-
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /*
@@ -93,7 +79,6 @@ Navigation menu with about and content
   padding: 0.5em 1em;
   margin: 1em 1em 0;
   text-align: right;
-  //width: 14em;
   right: 0;
   top: 0;
 
@@ -121,18 +106,5 @@ Navigation menu with about and content
     list-style: none;
     font-size: 0.8em;
     line-height: 1.6em;
-  }
-}
-
-/* Social buttons */
-.typeset .a2a_kit {
-  float: right;
-
-  a {
-    background: none;
-  }
-
-  a:hover {
-    background: none;
   }
 }

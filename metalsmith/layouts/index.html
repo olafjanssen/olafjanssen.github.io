@@ -4,7 +4,7 @@
     <title>Olaf T.A. Janssen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/simple-portfolio.css">
     <script type="application/javascript" src="node_modules/showdown/dist/showdown.min.js"></script>
 </head>
 <body>
@@ -14,104 +14,29 @@
     <nav>
         <ul>
             <li>
-                <a href="about">Me</a>
+                <a href="/about">Me</a>
             </li>
             <li>
-                <a href="projects" class="current">Projects</a>
+                <a href="/" class="current">Projects</a>
             </li>
-            <li>
-                <a href="ideas">Ideas</a>
-            </li>
+            <!--<li>-->
+                <!--<a href="ideas">Ideas</a>-->
+            <!--</li>-->
         </ul>
     </nav>
 </div>
 
 <section class="project-container">
-    {{#each collections.projects}}<section class="project-item" data-tag="{{ tag }}">
-        <a href="projects/{{ tag }}">
-            <div class="project-thumb"
-                 style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div>
-            <div class="project-tag">{{ tag }}</div>
-        </a>
+    {{#each collections.projects}}{{#if tag}}<section class="project-item typeset" data-tag="{{ tag }}">
         <article class="project-full">
-            <h2>{{ title }}</h2>
-            <p class="project-full-blurp">{{ description }}</p>
-            <p class="project-full-date">{{ date }}</p>
+            <a href="projects/{{ tag }}">
+                <h3><div class="project-thumb"
+                                     style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div> {{ title }}</h3>
+            </a>
+            <p class="project-full-blurp">{{ description }} <time>{{ date }}</time></p>
         </article>
-    </section>{{/each}}
+    </section>{{/if}}{{/each}}
 </section>
 
 </body>
 </html>
-
-<script>
-    window.addEventListener('load', function (e) {
-
-        [].forEach.call(document.querySelectorAll('.project-item'), function (item, index) {
-            var rotation = (Math.floor(index / 2) * 0.2 * 100) + 1;
-            item.setAttribute('data-rotation', '' + rotation);
-            item.style.transform = 'rotate3d(0,1,0,' + rotation + 'deg)';
-            item.querySelector('.project-thumb').style.transform = 'rotate3d(0,1,0,' + -rotation + 'deg)';
-
-        });
-
-        [].forEach.call(document.querySelectorAll('.project-item'), function (item, index) {
-            var rotation = (Math.floor(index / 2) * 0.2 * 100) + 1;
-            item.addEventListener('transitionend', function (e) {
-                if (!document.body.classList.contains('project-overview') && !document.body.classList.contains('project-selected')) {
-                    var rotation = parseInt(item.getAttribute('data-rotation')) + 2;
-                    item.setAttribute('data-rotation', '' + rotation);
-                    item.style.transform = 'rotate3d(0,1,0,' + rotation + 'deg)';
-                    item.querySelector('.project-thumb').style.transform = 'rotate3d(0,1,0,' + -rotation + 'deg)';
-                    item.querySelector('.project-thumb').style.transition = 'transform 1s linear';
-                }
-            })
-        });
-
-        document.querySelector('.project-container').addEventListener('mouseenter', function (e) {
-            console.log('mouseover');
-            document.body.classList.add('project-overview');
-            [].forEach.call(document.querySelectorAll('.project-item'), function (item, index) {
-                var rotation = parseInt(item.getAttribute('data-rotation'));
-                rotation = Math.round(rotation / 360) * 360;
-
-                item.setAttribute('data-rotation', '' + rotation);
-                item.style.transform = 'rotate3d(0,1,0,' + rotation + 'deg)';
-                item.querySelector('.project-thumb').style.transform = 'rotate3d(0,1,0,' + -rotation + 'deg)';
-                item.querySelector('.project-thumb').style.transition = 'none';
-            });
-        });
-
-        document.querySelector('.project-container').addEventListener('mouseleave', function (e) {
-            console.log('mouseout');
-            if (!document.body.classList.contains('project-selected')) {
-                document.body.classList.remove('project-overview');
-                [].forEach.call(document.querySelectorAll('.project-item'), function (item, index) {
-                    var rotation = parseInt(item.getAttribute('data-rotation')) + (Math.floor(index / 2) * 0.2 * 100) + 1;
-                    item.setAttribute('data-rotation', '' + rotation);
-                    item.setAttribute('data-index', '' + index);
-                    item.style.transform = 'rotate3d(0,1,0,' + rotation + 'deg)';
-                    item.querySelector('.project-thumb').style.transform = 'rotate3d(0,1,0,' + -rotation + 'deg)';
-                });
-            }
-        });
-
-        document.querySelector('.project-container').style.perspectiveOrigin = 'center ' + document.body.scrollTop + 'px';
-
-        loadFlickRCode();
-    });
-
-    window.addEventListener('scroll', function (e) {
-        console.log(document.body.scrollTop);
-        document.querySelector('.project-container').style.perspectiveOrigin = 'center ' + document.body.scrollTop + 'px';
-    });
-
-    function loadFlickRCode() {
-        var script = document.createElement('script');
-        script.src = '//embedr.flickr.com/assets/client-code.js';
-        script.type = 'text/javascript';
-
-        document.body.appendChild(script);
-    }
-
-</script>
