@@ -32,10 +32,10 @@ html {
 @import "../node_modules/sassline/assets/sass/sassline-base";
 
 .project-container {
-  padding: 10em 1em;
+  padding: 0 1em;
   position: relative;
   max-width: 33em;
-  margin: 0 auto;
+  margin: 10em auto 4em;
   font-size: 80%;
 
   p {
