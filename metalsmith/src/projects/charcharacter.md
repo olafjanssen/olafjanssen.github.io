@@ -5,6 +5,7 @@ image: th_17.png
 description: Donâ€™t let fonts prevent you from putting character in characters. Add some lines with CharCharacter.js.
 date: 2015-05-29
 type: project
+status: todo
 layout: project.html
 ---
 

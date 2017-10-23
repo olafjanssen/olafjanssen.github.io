@@ -766,7 +766,7 @@ a {
     font-style: italic;
     white-space: nowrap; }
     .project-container time::before {
-      content: "\2014"; }
+      content: "\2014\00a0"; }
   .project-container pre {
     word-break: normal; }
   .project-container .project-thumb {

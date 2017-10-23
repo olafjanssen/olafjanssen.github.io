@@ -5,6 +5,7 @@ image: th_12.png
 description: Creating a chain reaction (Rube Goldberg machine) animation on 20 laptops with JavaScript and a little help from Hydna is an easy and fun exercise to do with students learning JavaScript.
 date: 2015-03-01
 type: project
+status: todo
 layout: project.html
 ---
 

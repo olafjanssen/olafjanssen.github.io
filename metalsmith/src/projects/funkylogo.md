@@ -5,6 +5,7 @@ image: th_13.png
 description: FunkySVG is an irrelevant JavaScript micro library that makes your SVGs dance using SMIL animations.
 date: 2015-04-30
 type: project
+status: todo
 layout: project.html
 ---
 

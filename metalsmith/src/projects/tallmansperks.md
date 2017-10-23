@@ -1,5 +1,5 @@
 ---
-title: A Tall Man's Perks
+title: "A Tall Man's Perks"
 tag: tallmansperks
 image: th_39.png
 description: Practicing drawing with a pen on my iPad and as cathartic relief of struggling with being very tall, a series of cartoons to show the brighter side of tallness.

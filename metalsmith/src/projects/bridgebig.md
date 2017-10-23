@@ -6,6 +6,7 @@ description:
 date: 2013-03-30
 type: project
 layout: project.html
+status: todo
 ---
 
 

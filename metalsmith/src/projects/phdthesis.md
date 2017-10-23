@@ -5,6 +5,7 @@ image:
 description: 
 date: 2010-11-09
 type: project
+status: todo
 layout: project.html
 ---
 

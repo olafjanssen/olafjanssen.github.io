@@ -27,7 +27,7 @@
 </div>
 
 <section class="project-container">
-    {{#each collections.projects}}{{#if tag}}<section class="project-item typeset" data-tag="{{ tag }}">
+    {{#each collections.projects}}{{#if tag}}<section class="project-item typeset {{ status }}" data-tag="{{ tag }}">
         <article class="project-full">
             <a href="projects/{{ tag }}">
                 <h3><div class="project-thumb"
