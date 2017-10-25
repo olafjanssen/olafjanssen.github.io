@@ -95,6 +95,10 @@ body {
     body {
       font-size: 1.15789rem; } }
 
+body h2 {
+    text-align: center;
+}
+
 a {
   color: #0E58F5;
   text-decoration: none;

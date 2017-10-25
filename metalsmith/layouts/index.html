@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Olaf T.A. Janssen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,54 @@
     <link rel="stylesheet" type="text/css" href="css/simple-portfolio.css">
     <script type="application/javascript" src="node_modules/showdown/dist/showdown.min.js"></script>
 </head>
-<body>
 
-<div class="nav-panel typeset">
-    <h1>Olaf T.A. Janssen</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/about">Me</a>
-            </li>
-            <li>
-                <a href="/" class="current">Projects</a>
-            </li>
-            <!--<li>-->
+<body class="typeset">
+
+    <div class="nav-panel">
+        <h1>Olaf T.A. Janssen</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/about">Me</a>
+                </li>
+                <li>
+                    <a href="/" class="current">Projects</a>
+                </li>
+                <!--<li>-->
                 <!--<a href="ideas">Ideas</a>-->
-            <!--</li>-->
-        </ul>
-    </nav>
-</div>
+                <!--</li>-->
+            </ul>
+        </nav>
+    </div>
 
-<section class="project-container">
-    {{#each collections.projects}}{{#if tag}}<section class="project-item typeset {{ status }}" data-tag="{{ tag }}">
-        <article class="project-full">
-            <a href="projects/{{ tag }}">
-                <h3><div class="project-thumb"
-                                     style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div> {{ title }}</h3>
-            </a>
-            <p class="project-full-blurp">{{ description }} <time>{{ date }}</time></p>
-        </article>
-    </section>{{/if}}{{/each}}
-</section>
+    <section class="project-container">
+        {{#each collections.projects}}{{#if tag}}{{#if contents}}
+        <section class="project-item {{ status }}" data-tag="{{ tag }}">
+            <article class="project-full">
+                <a href="projects/{{ tag }}">
+                    <h3>
+                        <div class="project-thumb" style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div> {{ title }}</h3>
+                </a>
+                <p class="project-full-blurp">{{ description }} <time>{{ date }}</time></p>
+            </article>
+        </section>{{/if}}{{/if}}{{/each}}
+    </section>
+
+    <h2>No Content Yet</h2>
+
+    <section class="project-container">
+        {{#each collections.projects}}{{#if tag}}{{#if contents}}{{else}}
+        <section class="project-item {{ status }}" data-tag="{{ tag }}">
+            <article class="project-full">
+                <a href="projects/{{ tag }}">
+                    <h3>
+                        <div class="project-thumb" style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div> {{ title }}</h3>
+                </a>
+                <p class="project-full-blurp">{{ description }} <time>{{ date }}</time></p>
+            </article>
+        </section>{{/if}}{{/if}}{{/each}}
+    </section>
 
 </body>
+
 </html>

@@ -8,5 +8,3 @@ type: project
 status: todo
 layout: project.html
 ---
-
-Tool to follow and compare the coding of all students in real-time.
