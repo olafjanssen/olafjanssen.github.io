@@ -22,6 +22,9 @@ This was created by creating a video for all devices and then gathering a group 
 
 In short, a JavaScript chain reaction!
 
+<div class="embed-container">
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/95999935@N05/24101696738/" title="29643d57a2a2b7e31a345838a4ef5ebb-1024x768"><img src="https://farm5.staticflickr.com/4506/24101696738_a368a4c1f3.jpg" width="500" height="375" alt="29643d57a2a2b7e31a345838a4ef5ebb-1024x768"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></div>
+
 ## The idea
 
 How would that work? I assign to each student an id; just a number. This is his position in the chain. Every student uses his laptop or tablet and creates a small web project. They all include a small JavaScript library that does the hard work, namely listening to a signal from a server and sending a signal to a server to start the animation on the next laptop. All that is left for a student is to create a small application module that listens to the right id and then starts his animation. When his animation ends he should indicate to my chain reaction library that the animation should start on the next device.
