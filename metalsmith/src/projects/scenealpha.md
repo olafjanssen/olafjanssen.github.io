@@ -11,7 +11,7 @@ layout: project.html
 ## Result
 The scene starts from the point-of-view of a person in the countryside who has his mind set on watching a full solar eclipse, while Ave Maria is playing in the background. At the same time in India near the Taj Mahal, festivities have started celebrating the eclipse with fireworks. Suddenly, the sun breaks the darkness from the eclipse with Cradle of Filth music screaming in the background. The eclipse did not finish naturally, the moon is pierced. But by what or who?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n_qvx4R1ZgU" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/n_qvx4R1ZgU" frameborder="0" allowfullscreen></iframe></div>
 
 ## Process
 (The slightly edited text below was written on September 23, 2001)

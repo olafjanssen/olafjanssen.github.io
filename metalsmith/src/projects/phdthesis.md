@@ -11,11 +11,11 @@ layout: project.html
 
 ## Overview
 
-During little over 4 years I worked on a PhD research that gave me the opportunity to write my own rigorous computer model for calculating the propagation of light near nanoscale structures. To read the full research download my [thesis](https://www.dropbox.com/s/7np68khi61az331/Rigorous_simulations_of_emitting_and_non.pdf?dl=0&m=). Below, some details are given, to see all the publications related to this research visit my academic profiles at [ResearchGate](https://www.researchgate.net/profile/Olaf_Janssen) or [Academia.org](https://tudelft.academia.edu/OlafJanssen).
+During little over 4 years I worked on a PhD research that gave me the opportunity to write my own rigorous computer model for calculating the propagation of light near nanoscale structures. To read the full research download my [thesis](https://www.dropbox.com/s/7np68khi61az331/Rigorous_simulations_of_emitting_and_non.pdf?dl=0&m=). Below, some details are given, to see all the publications related to this research visit my academic profiles at [ResearchGate](https://www.researchgate.net/profile/Olaf_Janssen) or [Academia](https://tudelft.academia.edu/OlafJanssen).
 
 Before the actual defense I gave a so-called layman's talk to introduce the layman audience to my research before the professors start drilling me with difficult questions. The visuals can be seen below (no audio/in Dutch).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ooDzIuQ-yew" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/ooDzIuQ-yew" frameborder="0" allowfullscreen></iframe></div>
 
 ## Propositions
 

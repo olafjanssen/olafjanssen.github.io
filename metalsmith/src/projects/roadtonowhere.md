@@ -19,7 +19,7 @@ layout: project.html
 * interactive mini map to navigate the larger city map
 
 ### Gameplay
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MJ9OrldxCW4" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/MJ9OrldxCW4" frameborder="0" allowfullscreen></iframe></div>
 
 ### Process
 With the experience of Alien Cliché, I wanted to continue my quest for interactive visual simulations. This time I was inspired by *Grand Theft Auto 1* (1997). In this game, cars drive around the town and interact with the player's car. This fascinated to the extend that I wanted to recreate this. Instead of driving a car myself, as in Grand Theft Auto, I wanted to control the player's car with the mouse the way you control units in *Dune 2* (1992) or *Command & Conquer 1* (1995).

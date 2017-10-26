@@ -9,4 +9,4 @@ status: todo
 layout: project.html
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HO5JPyiXdx0" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/HO5JPyiXdx0" frameborder="0" allowfullscreen></iframe></div>

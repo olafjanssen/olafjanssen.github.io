@@ -9,7 +9,7 @@ layout: project.html
 ---
 
 ## Runtime footage
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zlHM5GPj1zo" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/zlHM5GPj1zo" frameborder="0" allowfullscreen></iframe></div>
 
 ## Process
 This little piece of code started with the following story. In English class our teacher had a tendency to think halfway his sentences about how to end that sentence. At one point he went (in Dutch) *How can I...*, where context would beg the finish *say this?*. However, I whispered the words *paraphrase this?* and the teacher subsequently ended his phrase with these words. Now to be clear, *to paraphrase* is very uncommon in Dutch (parafraseren).
