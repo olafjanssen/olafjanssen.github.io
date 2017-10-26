@@ -63,17 +63,49 @@
 
             </p>
             <div id="cnt-chainreaction" class="project-full-content">
-                <p>At the start of the fourth semester for students on ICT &amp; Media Design, we visited the ontdekfabriek in Eindhoven. As an inspirational exercise we created a Rube Goldberg machine or chain reaction from all kind of materials that could be found in a old derelict factory hall. The result was a poor manâ€™s version of the following music video by OK Go.</p>
-<p>At the end of the afternoon, while cleaning up our own mess, my colleague Chris and I looked at each other and thought: Why donâ€™t we do this in JavaScript? We didnâ€™t really know how it should work and what it should do, but then the following music video by Brunettes Shoot Blondes came to mind:</p>
+                <h2 id="inspiration">Inspiration</h2>
+<p>At the start of the fourth semester for students on ICT &amp; Media Design, we visited the ontdekfabriek in Eindhoven. As an inspirational exercise we created a Rube Goldberg machine or chain reaction from all kind of materials that could be found in a old derelict factory hall. The result was a poor man&#39;s version of the <a href="https://youtu.be/qybUFnY7Y8w">music video</a> by <em>OK Go</em>.</p>
+<p>At the end of the afternoon, while cleaning up our own mess, my colleague Chris and I looked at each other and thought: Why don&#39;t we do this in JavaScript? We didn&#39;t really know how it should work and what it should do, but then the <a href="https://vimeo.com/106547345">music video</a> by <em>Brunettes Shoot Blondes</em> came to mind.</p>
 <p>This was created by creating a video for all devices and then gathering a group of people to press play at the exact same moment. So the first question to my students was after showing this video: How would you create such a video as a Media Designer? The answers were pointing right to what we were hoping for:</p>
 <ul>
-<li>donâ€™t use videos, create a web animation using HTML5+JS+CSS</li>
+<li>don&#39;t use videos, create a web animation using HTML5+JS+CSS</li>
 <li>create a small library to signal a device to start its own animation</li>
 </ul>
 <p>In short, a JavaScript chain reaction!</p>
+<h2 id="the-idea">The idea</h2>
 <p>How would that work? I assign to each student an id; just a number. This is his position in the chain. Every student uses his laptop or tablet and creates a small web project. They all include a small JavaScript library that does the hard work, namely listening to a signal from a server and sending a signal to a server to start the animation on the next laptop. All that is left for a student is to create a small application module that listens to the right id and then starts his animation. When his animation ends he should indicate to my chain reaction library that the animation should start on the next device.</p>
-<p>So how about the server-side. At first, we started writing a minimal backend with PHP, storing current position in a text file. But then I thought it would be nice to use a service for this. I am eager to inspire students to use services more as I see too often that great plans are given up because they fear they canâ€™t build a service themselves.</p>
-<p>I looked around for messaging services and I ended up at hydna.com. They have a free plan that covers 30 concurrent devices per day and 100MB of traffic per month, which is quite enough for classroom use. The API of their JavaScrip library is super simple and it took me only a couple of minutes to get it working.</p>
+<p>So how about the server-side. At first, we started writing a minimal backend with PHP, storing current position in a text file. But then I thought it would be nice to use a service for this. I am eager to inspire students to use services more as I see too often that great plans are given up because they fear they can&#39;t build a service themselves.</p>
+<p>I looked around for messaging services and I ended up at <a href="https://hydna.com">hydna.com</a>. They have a free plan that covers 30 concurrent devices per day and 100MB of traffic per month, which is quite enough for classroom use. The API of their JavaScrip library is super simple and it took me only a couple of minutes to get it working.</p>
+<pre><code class="lang-javascript">var channel = new HydnaChannel(&#39;public.hydna.net&#39;, &#39;rw&#39;);
+
+channel.onopen = function(event) {
+// channel is open and ready to use
+};
+
+channel.onerror = function(event) {
+// an error occured when connecting or opening the channel
+};
+
+channel.onmessage = function(event) {
+// receiving a message from the channel
+alert(event.data);
+};
+</code></pre>
+<h2 id="the-result">The Result</h2>
+<p>Of course they have an interface for every platform and in any language you could wish for, but I’m sticking to JavaScript. So writing a small project as a template for the chain reaction is easy, see the code on <a href="https://github.com/olafjanssen/chain-js">Github</a>. Using that code and a bit of their own imagination, the students managed to get some kind of chain working. While the level of animation and imagination isn’t very professional, they learned about writing and using libraries for the first time and had to think of a nice animation within only a few hours. Here are the results, first my test at my office then the results by two classes.</p>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/mJ_mfetn0js" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/vsYybeAHRM0" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/oVZWig8rbSM" frameborder="0" allowfullscreen></iframe></div>
+
+<h2 id="lessons-learned">Lessons learned</h2>
+<ul>
+<li>Live testing the animation, while being connected to the messaging server leads to classroom mayhem.</li>
+<li>Writing your code in a modular way with a clear API prevents this mayhem as you can unit test the animation.</li>
+<li>Realising the chain can only work if everyone helps each other, peer reviewing code is needed, it is especially embarrassing if your animation does not start, while the person before you messed up.</li>
+<li>Remembering where in the chain you are  (number &lt; 20) is still a difficult task.</li>
+</ul>
 
             </div>
         </article>
