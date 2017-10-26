@@ -174,7 +174,7 @@ Responsive styling
     .project-overview .project-item .project-tag {
       display: none; }
   .project-overview .project-item:nth-child(2n) .project-thumb {
-    left: 0em; } }
+    left: 0; } }
 @media only screen and (min-width: 880px) {
   /*
 Interactivity Styling for Project Slug
