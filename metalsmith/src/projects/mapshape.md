@@ -27,7 +27,7 @@ The experiment has no user-friendly interface or an online demo, so I can only s
         <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157688342239613&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
     </div><small><a target="_blank" href="https://www.flickr.com/photos/95999935@N05/albums/72157688342239613">Flickr album</a></small>
 
-## What's would be next
+## Plans for the future
 The goal of what I wanted to reach was that you could use SVGs and to have a simple user interface so you could play around with it. Maybe some day.
 
 In the future, I could maybe use an algorithm to find a best fit on earth using some machine learning algorithm.
