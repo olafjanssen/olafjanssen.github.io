@@ -11,50 +11,56 @@
 
 <body class="typeset">
 
-    <div class="nav-panel">
-        <h1>Olaf T.A. Janssen</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/about">Me</a>
-                </li>
-                <li>
-                    <a href="/" class="current">Projects</a>
-                </li>
-                <!--<li>-->
-                <!--<a href="ideas">Ideas</a>-->
-                <!--</li>-->
-            </ul>
-        </nav>
-    </div>
+<div class="nav-panel">
+    <h1>Olaf T.A. Janssen</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about">Me</a>
+            </li>
+            <li>
+                <a href="/" class="current">Projects</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
-    <section class="project-container">
-        {{#each collections.projects}}{{#if tag}}{{#if contents}}
-        <section class="project-item {{ status }}" data-tag="{{ tag }}">
-            <article class="project-full">
-                <a href="projects/{{ tag }}">
-                    <h3>
-                        <div class="project-thumb" style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div> {{ title }}</h3>
-                </a>
-                <p class="project-full-blurp">{{ description }} <time>{{ date }}</time></p>
-            </article>
-        </section>{{/if}}{{/if}}{{/each}}
-    </section>
+<section class="project-container">
+    {{#each collections.projects}}{{#if tag}}{{#if contents}}
+    <article class="project-full">
+        <a href="projects/{{ tag }}">
+            <h3>
+                <div class="project-thumb"
+                     style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div>
+                {{ title }}
+            </h3>
+        </a>
+        <p class="project-full-blurp">{{ description }}
+            <time>{{#if start-date}}({{ start-date }} &mdash;){{/if}} {{ date }}</time>
+        </p>
+    </article>
+    {{/if}}{{/if}}{{/each}}
+</section>
 
-    <h2>No Content Yet</h2>
+<hr>
+<h2>No Content Yet</h2>
 
-    <section class="project-container">
-        {{#each collections.projects}}{{#if tag}}{{#if contents}}{{else}}
-        <section class="project-item {{ status }}" data-tag="{{ tag }}">
-            <article class="project-full">
-                <a href="projects/{{ tag }}">
-                    <h3>
-                        <div class="project-thumb" style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div> {{ title }}</h3>
-                </a>
-                <p class="project-full-blurp">{{ description }} <time>{{ date }}</time></p>
-            </article>
-        </section>{{/if}}{{/if}}{{/each}}
-    </section>
+<section class="project-container">
+    {{#each collections.projects}}{{#if tag}}{{#if contents}}{{else}}
+    <article class="project-full">
+        <a href="projects/{{ tag }}">
+            <h3>
+                <div class="project-thumb"
+                     style="background-image:url('img/thumbs/{{ image }}'); background-position:center; background-size:cover;"></div>
+                {{ title }}
+            </h3>
+        </a>
+        <p class="project-full-blurp">{{ description }}
+            <time>{{ date }}</time>
+        </p>
+    </article>
+    {{/if}}{{/if}}{{/each}}
+</section>
 
 </body>
 

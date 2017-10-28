@@ -28,6 +28,10 @@ Metalsmith(__dirname)
             {
                 key: 'date',
                 format: 'MMMM YYYY'
+            },
+            {
+                key: 'start-date',
+                format: 'MMMM YYYY'
             }
         ]
     }))

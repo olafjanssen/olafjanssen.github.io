@@ -3,8 +3,8 @@ title: Mega Multi Pong
 tag: megamultipong
 image: th_9.png
 description: Mega Multi Pong (MMP) is multi-device, multi-ball and multi-player with multi-bit audio! MMP is created about 42 years before the original Pong was released in 1972 and MMP is therefore THE answer to the ultimate question about life, the universe and everything.
-date: 2015-03-25
-lastupdate: 2017-04-05
+date: 2017-04-05
+start-date: 2015-03-25
 type: project
 status: todo
 layout: project.html
