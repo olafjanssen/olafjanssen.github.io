@@ -850,9 +850,11 @@ Navigation menu with about and content
   height: 0;
   overflow: hidden;
   max-width: 100%; }
+  .embed-container.embed-image {
+    padding-bottom: 70%; }
   .embed-container iframe,
   .embed-container object,
-  .embed-container embed {
+  .embed-container embed, .embed-container img {
     position: absolute !important;
     top: 0;
     left: 0;

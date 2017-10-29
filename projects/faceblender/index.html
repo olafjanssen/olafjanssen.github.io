@@ -5,11 +5,11 @@
     <title>
         FaceBlender
     </title>
-    <meta name="description" content="">
+    <meta name="description" content="First attempt to blend faces into one in search for absolute beauty, coded from scratch. Main result at the time: all blends lead to Britney Spears lookalikes.">
 
     <meta property="og:title" content="FaceBlender">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="/img/thumbs/">
+    <meta property="og:image" content="/img/thumbs/faceblender.png">
     <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
 
     <meta charset="utf-8">
@@ -39,13 +39,13 @@
         <article class="project-full">
             <a href="/">
                 <div class="project-thumb"
-                     style="background-image:url('../../img/thumbs/'); background-position:center; background-size:cover;"></div>
+                     style="background-image:url('../../img/thumbs/faceblender.png'); background-position:center; background-size:cover;"></div>
             </a>
             <h1>
                 FaceBlender
             </h1>
             <p class="project-full-blurp">
-                
+                First attempt to blend faces into one in search for absolute beauty, coded from scratch. Main result at the time: all blends lead to Britney Spears lookalikes.
             </p>
             <p class="project-full-date">
                 <span class="date">July 2000</span>
@@ -57,7 +57,23 @@
 
             </p>
             <div id="cnt-faceblender" class="project-full-content">
-                
+                <h2 id="idea">Idea</h2>
+<p>A theory states how the human brain defines beauty. It holds a template face which is the average of all the faces one sees. This is then compared to any other face, the prettiest ones being those that resemble the average the most. This explains why every person has his own definition of beauty, but it also explains why some features are thought of as beautiful by most people. What this also means is that people with symmetric faces are the most attractive. Using FaceBlender portraits are automatically transformed and blended into an average picture. In addition, a Self-Organizing Map is produced, revealing the different types of faces hidden in the input data.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>C++ Project, with OpenGL Framework</li>
+<li>Linear Algebra Coordinate Transformations</li>
+<li>Backward and Forward Projection</li>
+<li>Database of 170 faces</li>
+<li>Kohonen Self-Organizing Map</li>
+</ul>
+<h2 id="results">Results</h2>
+<p>The poster below shows all that I have left of the original project. Sadly, I lost the code on a hard drive gone missing. It shows the mix of the mouth-closed subset of the 170 pictures and part of the Kohonen map going from brunettes in one corner to light blonde in the other.</p>
+<p>This version does not contain any face recognition, I had to manually tag the eye and mouth positions in all photos, also I cleaned up the background so that it would average to a black color. An interesting result that I remembered is that the final result did not really change after 70 or so images, and that any random set of 70 pictures of the set of 170 gave pretty much the same result, which more or less resembled Britney Spears at the time.</p>
+<div class="embed-container embed-image">
+<a href="/img/projects/faceblender-original-poster.png" target="blank"><img src="/img/projects/faceblender-original-poster.png"></a>
+</div>
+
             </div>
         </article>
 

@@ -164,9 +164,13 @@ Navigation menu with about and content
   overflow: hidden;
   max-width: 100%;
 
+  &.embed-image {
+    padding-bottom: 70%;
+  }
+
   iframe,
   object,
-  embed {
+  embed,img {
     position: absolute !important;
     top: 0;
     left: 0;
