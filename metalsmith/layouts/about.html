@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Olaf T.A. Janssen</title>
+    <title>
+        {{ title }}
+    </title>
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/img/about.jpg">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="../css/about.css">
+    <link rel="stylesheet" type="text/css" href="../css/simple-portfolio.css">
 </head>
-<body>
+<body class="typeset">
 
-<div class="nav-panel typeset">
+<nav class="nav-panel">
     <h1>Olaf T.A. Janssen</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/about" class="current">Me</a>
-            </li>
-            <li>
-                <a href="/">Projects</a>
-            </li>
-            <!--<li>-->
-                <!--<a href="ideas">Ideas</a>-->
-            <!--</li>-->
-        </ul>
-    </nav>
-</div>
+    <ul>
+        <li>
+            <a href="/about" class="current">Me</a>
+        </li>
+        <li>
+            <a href="/">Projects</a>
+        </li>
+    </ul>
+</nav>
 
-<section class="project-container typeset">
-    <img src="" class="about-image">
+<section class="project-content">
+    <figure class="about-image"></figure>
     <article class="about">
 {{{ contents }}}
     </article>

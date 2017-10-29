@@ -2,28 +2,35 @@
 <html>
 
 <head>
-    <title>Olaf T.A. Janssen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ title }}
+    </title>
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/img/about.jpg">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/simple-portfolio.css">
-    <script type="application/javascript" src="node_modules/showdown/dist/showdown.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/simple-portfolio.css">
 </head>
 
 <body class="typeset">
 
-<div class="nav-panel">
+<nav class="nav-panel">
     <h1>Olaf T.A. Janssen</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/about">Me</a>
-            </li>
-            <li>
-                <a href="/" class="current">Projects</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+    <ul>
+        <li>
+            <a href="/about">Me</a>
+        </li>
+        <li>
+            <a href="/" class="current">Projects</a>
+        </li>
+    </ul>
+</nav>
 
 <section class="project-container">
     {{#each collections.projects}}{{#if tag}}{{#if contents}}
@@ -42,10 +49,8 @@
     {{/if}}{{/if}}{{/each}}
 </section>
 
-<hr>
-<h2>No Content Yet</h2>
-
 <section class="project-container">
+    <h2>No Content Yet</h2>
     {{#each collections.projects}}{{#if tag}}{{#if contents}}{{else}}
     <article class="project-full">
         <a href="projects/{{ tag }}">

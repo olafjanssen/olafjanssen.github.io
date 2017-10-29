@@ -1,5 +1,7 @@
 ---
 layout: about.html
+title: "About Olaf T.A. Janssen"
+description: "My name is Olaf Janssen. One of several on this globe, but the only left-handed one with a PhD in nanophysics, an unnatural interest in languages and psychology."
 ---
 
 ## What's in my DNA?

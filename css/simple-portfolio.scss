@@ -68,8 +68,38 @@ html {
   }
 }
 
-body h2 {
-    text-align: center;
+.project-content {
+  max-width: 33em;
+  margin: 0 auto;
+  padding: 4em 1em;
+
+  p {
+    text-align: justify;
+  }
+
+  pre {
+    word-break: normal;
+  }
+
+  .project-thumb {
+    height: 8em;
+    width: 8em;
+
+    box-shadow: 0 0 0 0.4em rgba(0, 0, 0, 0.6) inset;
+    filter: grayscale(100%);
+    border-radius: 10em;
+    background: #666;
+  }
+
+  .date {
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .project-tag {
+    display: none;
+  }
+
 }
 
 /*
@@ -111,4 +141,44 @@ Navigation menu with about and content
     font-size: 0.8em;
     line-height: 1.6em;
   }
+}
+
+/* Social buttons */
+.typeset .a2a_kit {
+  float: right;
+
+  a {
+    background: none;
+  }
+
+  a:hover {
+    background: none;
+  }
+}
+
+/* Making embedded elements responsive */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+
+  iframe,
+  object,
+  embed {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about-image {
+  background: #666 url('../img/about.jpg') center center;
+  background-size: cover;
+  margin: 3em 0 1em;
+  height: 10em;
+  width: 100%;
 }

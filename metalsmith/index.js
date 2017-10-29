@@ -8,8 +8,6 @@ var dateFormatter = require('metalsmith-date-formatter');
 
 Metalsmith(__dirname)
   .metadata({
-    title: "Portfolio of Olaf T.A. Janssen",
-    description: "It's about saying »Hello« to the World.",
     generator: "Metalsmith",
     url: "https://olafjanssen.github.io/"
   })
