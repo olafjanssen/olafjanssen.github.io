@@ -8,5 +8,3 @@ type: project
 status: todo
 layout: project.html
 ---
-
-
