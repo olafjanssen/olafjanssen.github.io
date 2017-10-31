@@ -20,7 +20,7 @@ In the end, I decided to use only the index and middle finger, mapping a short t
  
 To store data I added an SD card reader to the Arduino board. I decided that a 16GB card would probably be enough for most of my nighttime thoughts. The code for the glove is simply C code for the Arduino board and mostly consists of a state machine that keeps track of where in the process the user is: within typing a character, on or off state or between touches.
 
-This is how the working prototype looks like, during several phases of designing the thing:
+These images show the glove during different phases of the design process:
 
 <div class="embed-container">
         <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157688598860714&sort=2&by=album&theme=slider&scale=fit&limit=100&skin=default-light&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
