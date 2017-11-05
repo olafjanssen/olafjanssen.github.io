@@ -26,3 +26,6 @@ During Tai Chi, the main character realises the true intentions of his stomach p
  
  ## Day 4: 6961
  On the almost deserted island of Schokland, Pieter, keeper of the lighthouse, retells the story of the unholy fight against the water. At the evening of a heavy storm he receives an unexpected visitor.
+ 
+ ## Day 5: 9401
+ Pieter experiences a frightening flood with his family, literally looking death in the eyes. Men finally wins the struggle against the water, as long as he keeps up the fight.
