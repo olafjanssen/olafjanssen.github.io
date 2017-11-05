@@ -21,4 +21,8 @@ The main character arrives by plane on the Island of Tatakoto in French Polynesi
 ## Day 2: 3909
 During Tai Chi, the main character realises the true intentions of his stomach problems and explores the possibilities. The Ponans play a game of 'kalama li kala mu li kala ma, a a a'.
 
+ ## Day 3: 5102
+ The main character is in Guatamala on its way to a archeological park to look at Mayan hieroglyphs when he discovers where he should go next.
  
+ ## Day 4: 6961
+ On the almost deserted island of Schokland, Pieter, keeper of the lighthouse, retells the story of the unholy fight against the water. At the evening of a heavy storm he receives an unexpected visitor.
