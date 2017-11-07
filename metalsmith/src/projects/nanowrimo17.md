@@ -29,3 +29,9 @@ During Tai Chi, the main character realises the true intentions of his stomach p
  
  ## Day 5: 9401
  Pieter experiences a frightening flood with his family, literally looking death in the eyes. Men finally wins the struggle against the water, as long as he keeps up the fight.
+ 
+ ## Day 6: 10172
+ The main character meets the artist of the Mayan alike drawings.
+ 
+ ## Day 7: 12141
+ The academic meets the Toki Ponist in a cafe and is challenged to 'pu'.
