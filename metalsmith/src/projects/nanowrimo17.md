@@ -2,7 +2,7 @@
 title: "NaNoWriMo 2017: The Toki Ponist on the Mountain"
 tag: nanowrimo17
 image: nanowrimo17.png
-description: "I decided to participate in the National Writing Month (NaNoWriMo) to write a 50,000 word novel in the month November. That means just over 1,600 words a day. I will tell the story of a man that uncovers the mysteries of the Ponas, a people speaking their peculiar language Toki Pona."
+description: "I decided to participate in the National Novel Writing Month (NaNoWriMo) to write a 50,000 word novel in the month November. That means just over 1,600 words a day. I will tell the story of a man that uncovers the mysteries of the Ponas, a people speaking their peculiar language Toki Pona."
 date: 2017-11-01
 type: project
 status: todo
@@ -35,3 +35,6 @@ During Tai Chi, the main character realises the true intentions of his stomach p
  
  ## Day 7: 12141
  The academic meets the Toki Ponist in a cafe and is challenged to 'pu'.
+ 
+ ## Day 8: 14041
+ The main character arrives by plane on the Island of Tatakoto in French Polynesia. The Ponan ritual of 'toki pi nasin nasa' is performed by Jan Tomi and Jan Lawa.
