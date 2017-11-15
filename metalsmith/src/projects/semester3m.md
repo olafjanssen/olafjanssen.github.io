@@ -8,3 +8,6 @@ type: project
 status: todo
 layout: project.html
 ---
+
+<div class="embed-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9KxlK8IVYfZCvGFWYUjqgKISICUAQ6-Y" frameborder="0" gesture="media" allowfullscreen></iframe></div>
