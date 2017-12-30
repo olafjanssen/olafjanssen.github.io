@@ -1,4 +1,76 @@
-<p>When Iâ€™m not doodling doodles, I doodle wordles. The modern latin alphabet is very flexible. While there are thousands of fonts to show for this, I feel this is not enough. Why should a character always look the same? Why canâ€™t it depend on the word youâ€™re writing? Well it can be done somewhat using a thing called ligatures in typography. Ligatures are specific gylphs in the font for a grouping of subsequent characters, such as: fl, fi, and Th. But what I want are more complex and maybe random glyph alterations to give a word character.</p>
-<p>Looking at my world doodles, the thing that I always do is extend my lâ€˜s and gâ€˜s. The l must be the loveliest letter of them all. Name a word that starts with an l and does not sound lovely? You canâ€™t! But an l later in the word also carries the word. Literally. By elongating the onset of the l we can let the l carry a large portion of the word. That is, unless other letters block the l from doing so. The i and j can break it with their nasty punctuation. But the f takes a gentler approach guiding the l down. In fact, the f is a source itself, a source of fast forward fightingness.</p>
-<p>But it doesnâ€™t end there. The g pulls the word and the y tries its best too, until it meets a p or q. The q however is a unique letter that has reverse powers of the g, letting a word sit on its tail.</p>
-<p>So, I wrote a small JavaScript library helped with some CSS that can read text on a page and at these characteristic features described above. It currently only works well on monospace fonts, with glyphs that let the standard font glyphs merge almost perfectly with my CSS styled lines. See the restuls below. First a word in the regular Courier font, then a series of words in the same font, but enhanced using CharCharacter.js (check it out on Github).</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CharCharacter.js: Giving Characters Character Again
+    </title>
+    <meta name="description" content="Don&#x27;t let fonts prevent you from putting character in characters. Add some lines with CharCharacter.js.">
+
+    <meta property="og:title" content="CharCharacter.js: Giving Characters Character Again">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://olafjanssen.github.io/img/thumbs/th_17.png">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+    <meta property="og:description" content="Don&#x27;t let fonts prevent you from putting character in characters. Add some lines with CharCharacter.js.">
+    <meta property="og:url" content="https://olafjanssen.github.io/projects/charcharacter">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/simple-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+
+    <script type="application/javascript" src="/js/prism.js"></script>
+</head>
+
+<body class="typeset">
+
+<nav class="nav-panel">
+    <h1>Olaf T.A. Janssen</h1>
+    <ul>
+        <li>
+            <a href="/about">Me</a>
+        </li>
+        <li>
+            <a href="/">Projects</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="project-content">
+        <article class="project-full">
+            <a href="/">
+                <div class="project-thumb"
+                     style="background-image:url('../../img/thumbs/th_17.png'); background-position:center; background-size:cover;"></div>
+            </a>
+            <h1>
+                CharCharacter.js: Giving Characters Character Again
+            </h1>
+            <p class="project-full-blurp">
+                Don&#x27;t let fonts prevent you from putting character in characters. Add some lines with CharCharacter.js.
+            </p>
+            <p class="project-full-date">
+                <span class="date">May 2015</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_linkedin"></a>
+        </span>
+
+            </p>
+            <div id="cnt-charcharacter" class="project-full-content">
+                <p>When I&#39;m not doodling doodles, I doodle wordles. The modern latin alphabet is very flexible. While there are thousands of fonts to show for this, I feel this is not enough. Why should a character always look the same? Why can&#39;t it depend on the word you&#39;re writing? Well it can be done somewhat using a thing called ligatures in typography. <a href="http://www.webdesign.org/photoshop/text-effects/typography-tutorial-a-primer-on-ligatures.20379.html">Ligatures</a> are specific gylphs in the font for a grouping of subsequent characters, such as: fl, fi, and Th. But what I want are more complex and maybe random glyph alterations to give a word character.</p>
+<p><img src="/img/projects/charcharacter/belined-up.jpg" alt="charcharacter-drawing"></p>
+<p>Looking at my world doodles, the thing that I always do is extend my <em>l</em>&#39;s and <em>g</em>&#39;s. The <em>l</em> must be the loveliest letter of them all. Name a word that starts with an <em>l</em> and does not sound lovely? You can&#39;t! But an <em>l</em> later in the word also carries the word. Literally. By elongating the onset of the <em>l</em> we can let the <em>l</em> carry a large portion of the word. That is, unless other letters block the <em>l</em> from doing so. The <em>i</em> and <em>j</em> can break it with their nasty punctuation. But the <em>f</em> takes a gentler approach guiding the <em>l</em> down. In fact, the <em>f</em> is a source itself, a source of fast forward fightingness.</p>
+<p>But it doesn&#39;t end there. The <em>g</em> pulls the word and the <em>y</em> tries its best too, until it meets a <em>p</em> or <em>q</em>. The <em>q</em> however is a unique letter that has reverse powers of the <em>g</em>, letting a word sit on its tail.</p>
+<p><img src="/img/projects/charcharacter/charcharacter-output.png" alt="charcharacter-output"></p>
+<p>So, I wrote a small JavaScript library helped with some CSS that can read text on a page and at these characteristic features described above. It currently only works well on monospace fonts, with glyphs that let the standard font glyphs merge almost perfectly with my CSS styled lines. See the restuls below. First a word in the regular Courier font, then a series of words in the same font, but enhanced using CharCharacter.js (check it out on <a href="https://github.com/olafjanssen/charcharacter">Github</a>).</p>
+
+            </div>
+        </article>
+
+</section>
+
+</body>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</html>
