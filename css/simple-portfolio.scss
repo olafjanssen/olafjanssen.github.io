@@ -190,3 +190,18 @@ article p > img {
   height: 10em;
   width: 100%;
 }
+
+.dark:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5em;
+  background: linear-gradient(transparent, white);
+  top: -5em;
+}
+.dark {
+  background: white;
+  filter: invert(90%);
+  padding-bottom: 4em;
+  position: relative;
+}

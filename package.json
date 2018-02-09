@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio Olaf Janssen",
+  "name": "Portfolio_Olaf_Janssen",
   "private": true,
   "devDependencies": {
     "handlebars": "^4.0.5",
@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "sassline": "^2.1.2"
+  },
+  "scripts": {
+    "build": "node metalsmith/index.js"
   }
 }
