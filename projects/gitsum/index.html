@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        GitSum: classroom git visualization
+    </title>
+    <meta name="description" content="A project to visualize and analyse the git activity of all students in a semester.">
+
+    <meta property="og:title" content="GitSum: classroom git visualization">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://olafjanssen.github.io/img/thumbs/gitsum.png">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+    <meta property="og:description" content="A project to visualize and analyse the git activity of all students in a semester.">
+    <meta property="og:url" content="https://olafjanssen.github.io/projects/gitsum">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/simple-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+
+    <script type="application/javascript" src="/js/prism.js"></script>
+</head>
+
+<body class="typeset">
+
+<nav class="nav-panel">
+    <h1>Olaf T.A. Janssen</h1>
+    <ul>
+        <li>
+            <a href="/about">Me</a>
+        </li>
+        <li>
+            <a href="/">Projects</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="project-content">
+        <article class="project-full">
+            <a href="/">
+                <div class="project-thumb"
+                     style="background-image:url('../../img/thumbs/gitsum.png'); background-position:center; background-size:cover;"></div>
+            </a>
+            <h1>
+                GitSum: classroom git visualization
+            </h1>
+            <p class="project-full-blurp">
+                A project to visualize and analyse the git activity of all students in a semester.
+            </p>
+            <p class="project-full-date">
+                <span class="date">February 2018</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_linkedin"></a>
+        </span>
+
+            </p>
+            <div id="cnt-gitsum" class="project-full-content">
+                <h2 id="goal">Goal</h2>
+<p>While there are no fixed assignments in my classes, most of their development work is done in git repositories. There are no specific criteria in about how many lines or how often a student ought to commit. However, an insight into how git is used during the semester in a group is telling about a student&#39;s performance or at least effort. In addition, by visualizing the git progress of all students in a class might help in creating a healthy competition.</p>
+<p>The goal is to visualize certain git statistics for a classroom during the course of a semester.</p>
+<h2 id="methods-and-considerations">Methods and considerations</h2>
+<p>Luckily there already is a tool available that can generate nice statistics for student grading, namely <a href="https://github.com/ejwa/gitinspector">GitInspector</a>, originally developed to be used at Chalmers University of Technology and Gothenburg University, but more widely used today.</p>
+<p>GitInspector is in essence a Python script that can clone a git repo, perform statistics and then output data into a variety of formats. In my case, I will output JSON so I can easily work with in on the front-end visualisation.</p>
+<p>I want GitInspector to run on a server to allow teachers to easily refresh statistics on their classrooms with predefined git repos. I will combine it with a node server that will serve the front-end and a simple REST API.</p>
+<p>I store the data in Google Cloud Firestore, because I wanted to experiment with it. In the end, I don&#39;t want to have any student related data stored off campus, so that will be only be during the test phase.</p>
+<p>To host a Node server that can run Python scripts, I decided to create a Docker container that can easily be deployed on a school server. One big issue is that students will have their repos on a campus gitlab server that requires authentication.</p>
+<p>To summarize, new for me are: using <strong>Docker</strong>, using <strong>Google Cloud Firestore</strong>, and <strong>GitInspector</strong>.</p>
+<h2 id="result">Result</h2>
+<p>In progress.</p>
+<h2 id="reflection">Reflection</h2>
+
+            </div>
+        </article>
+
+</section>
+
+</body>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</html>
