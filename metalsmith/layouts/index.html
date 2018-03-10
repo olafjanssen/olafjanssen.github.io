@@ -29,12 +29,13 @@
             <a href="/about">Me</a>
         </li>
         <li>
-            <a href="/" class="current">Projects</a>
+            <a href="/" class="current">Thingamabobs</a>
         </li>
     </ul>
 </nav>
 
 <section class="project-container">
+    <p style="font-style: italic;">{{ description }}</p>
     {{#each collections.projects}}{{#if tag}}{{#if contents}}
     <article class="project-full">
         <a href="projects/{{ tag }}">
@@ -64,7 +65,7 @@
             </h3>
         </a>
         <p class="project-full-blurp">{{ description }}
-            <time>{{ date }}</time>
+            <time>{{#if start-date}}({{ start-date }} &mdash;){{/if}} {{ date }}</time>
         </p>
     </article>
     {{/if}}{{/if}}{{/each}}

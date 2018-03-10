@@ -1,6 +1,5 @@
 ---
 layout: index.html
-title: "Portfolio of Olaf T.A. Janssen"
-description: "A list of things I have spend time on, for better or for worse, on language, programming experiments, websites, drawings, academic pursuits."
+title: "Thingamabobs by Olaf T.A. Janssen"
+description: "A list of thingamajigs I have spent time on, for better or worse, relating to language, programming experiments, websites, apps, writing, drawing, academic pursuits."
 ---
-

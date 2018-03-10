@@ -8,11 +8,3 @@ type: project
 status: todo
 layout: project.html
 ---
-
-## Goal
-
-## Method
-
-## Result
-
-## Reflection
