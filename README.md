@@ -3,6 +3,16 @@ A list of thingamajigs I have spent time on, for better or worse, relating to la
 
 ## Contents
 
+### [CheckerList: A dynamic Deezer playlist](http://olafjanssen.github.io/projects/deezerlist)
+ *March 2018*
+
+Playlists should be dynamic, created on the spur of the moment, based on a mix of artists, albums and tracks that you choose.
+
+### [A winter of Finnish](http://olafjanssen.github.io/projects/winterfinnish)
+(*December 2017 &mdash;*) *March 2018*
+
+A third attempt to gain fluency in the Finnish language (suomen kieli).
+
 ### [GitSum: classroom git visualization](http://olafjanssen.github.io/projects/gitsum)
  *February 2018*
 
@@ -17,11 +27,6 @@ A proposal for a personal non-linear clock system
 (*December 2013 &mdash;*) *December 2017*
 
 At the end of the year, it is time for holiday greetings. These are the cards of my life.
-
-### [A winter of Finnish](http://olafjanssen.github.io/projects/winterfinnish)
- *December 2017*
-
-A third attempt to gain fluency in the Finnish language (suomen kieli).
 
 ### [NaNoWriMo 2017: The Toki Ponist on the Mountain](http://olafjanssen.github.io/projects/nanowrimo17)
  *November 2017*

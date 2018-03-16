@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CheckerList: A dynamic Deezer playlist
+    </title>
+    <meta name="description" content="Playlists should be dynamic, created on the spur of the moment, based on a mix of artists, albums and tracks that you choose.">
+
+    <meta property="og:title" content="CheckerList: A dynamic Deezer playlist">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://olafjanssen.github.io/img/thumbs/deezlist.png">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+    <meta property="og:description" content="Playlists should be dynamic, created on the spur of the moment, based on a mix of artists, albums and tracks that you choose.">
+    <meta property="og:url" content="https://olafjanssen.github.io/projects/deezerlist">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/simple-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+
+    <script type="application/javascript" src="/js/prism.js"></script>
+</head>
+
+<body class="typeset">
+
+<nav class="nav-panel">
+    <h1>Olaf T.A. Janssen</h1>
+    <ul>
+        <li>
+            <a href="/about">Me</a>
+        </li>
+        <li>
+            <a href="/">Thingamabobs</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="project-content">
+        <article class="project-full">
+            <a href="/">
+                <div class="project-thumb"
+                     style="background-image:url('../../img/thumbs/deezlist.png'); background-position:center; background-size:cover;"></div>
+            </a>
+            <h1>
+                CheckerList: A dynamic Deezer playlist
+            </h1>
+            <p class="project-full-blurp">
+                Playlists should be dynamic, created on the spur of the moment, based on a mix of artists, albums and tracks that you choose.
+            </p>
+            <p class="project-full-date">
+                <span class="date">March 2018</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_linkedin"></a>
+        </span>
+
+            </p>
+            <div id="cnt-deezerlist" class="project-full-content">
+                <h1 id="background">Background</h1>
+<p>I am a fond member of <a href="https://www.deezer.com">Deezer</a>, an online music streaming service, for several years now. It embodies the idea that music is something to be consumed and not something to be owned. However, after having used it for a long time now, a few things start to annoy me.</p>
+<p>The Flow mode, that is supposed to suggest new and exciting music for you to explore, turns out to be more like that radio station that tries to push same 20 crappy songs every hour of the day. And even if they are songs I like, I start to dislike them more and more and wonder more and more what other music there is. Why don&#39;t I get other tracks from the artists I favorite, but only the same few? </p>
+<p>Also, playlists, really? Maybe people like to make playlists. Maybe they have their fixed &#39;dinner time&#39;, &#39;unwind time&#39;, &#39;Friday night with the guys&#39;, &#39;Sunday afternoon with Whiskey and dog next to the fireplace&#39; moments that they can fix in static isolated playslists, but I am not such a person. I want dynamic flexible playlists.</p>
+<h1 id="the-idea">The Idea</h1>
+<p>I am happy that Deezer has a very open API with clear examples to get started. My idea is to create my own player based on the preferences I have indicated on the main Deezer site and the whole music database.</p>
+<ul>
+<li>Create dynamic playlists based on real-time selected favorite artists, albums and tracks.</li>
+<li>Make sure to hear all music of an artist, not just the few top songs and such that you don&#39;t hear the same songs over and over again.</li>
+<li>Allow to blacklist the tracks that I don&#39;t need to hear. </li>
+<li>A flow that really explores new music.</li>
+</ul>
+<p>You can find the latest version here: <a href="http://smoishele.com/deezlist/">deezlist</a>.</p>
+<h1 id="first-prototype">First prototype</h1>
+<p>For the first prototype, I have the following goals:</p>
+<ul>
+<li>Allow a user to log into Deezer (sadly necessary)</li>
+<li>Allow the user the select his favorite artists, album and tracks and create a dynamic playlist.</li>
+<li>The playlist contains then all albums from the selected artist, all tracks from selected favorite albums and your favorite tracks.</li>
+</ul>
+<p><img src="/img/projects/deezlist/prototype1.png" alt="deezlist-prototype1"></p>
+<p>Issues I still have:</p>
+<ul>
+<li>Well, the design is a mess.</li>
+<li>I cannot get the player to work yet on a mobile browswer. And I am not sure if there is supposed to be a 30 second limit or not.</li>
+</ul>
+<h1 id="plan-for-next-protoype">Plan for next protoype</h1>
+<p>For the next prototype:</p>
+<ul>
+<li>Settings: select all favorites</li>
+<li>Settings: weight the randomization such that an artist with 10x more songs does not get 10x more play time</li>
+<li>Dynamic playlist creation, changing the selection should immediately update the generated playlist.</li>
+<li>Create a blacklist of tracks (and perhaps albums) that won&#39;t get played (even if they belong to your favorite artist).</li>
+</ul>
+
+            </div>
+        </article>
+
+</section>
+
+</body>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</html>

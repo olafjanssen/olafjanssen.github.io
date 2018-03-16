@@ -3,7 +3,8 @@ title: "A winter of Finnish"
 tag: winterfinnish
 image: winterfinnish.png
 description: A third attempt to gain fluency in the Finnish language (suomen kieli).
-date: 2017-12-15
+start-date: 2017-12-15
+date: 2018-03-09
 type: project
 layout: project.html
 ---
