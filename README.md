@@ -8,6 +8,11 @@ A list of thingamajigs I have spent time on, for better or worse, relating to la
 
 Playlists should be dynamic, created on the spur of the moment, based on a mix of artists, albums and tracks that you choose.
 
+### [DooCycle: A To Do app ahead of its time](http://olafjanssen.github.io/projects/doocycle)
+ *March 2018*
+
+It is not about what you are about To Do, but what you have done and what fun stuff to do next.
+
 ### [A winter of Finnish](http://olafjanssen.github.io/projects/winterfinnish)
 (*December 2017 &mdash;*) *March 2018*
 
@@ -57,6 +62,11 @@ Comics should be fun, but there is a subculture of artists drawing about the mis
  *August 2016*
 
 An experiment in creating a module for the LMS system Instructure Canvas. It is a blog-like portfolio for students to show their daily progress in an easy accessible way.
+
+### [FoCal: Death to To Do lists](http://olafjanssen.github.io/projects/todohate)
+ *June 2016*
+
+For someone with anxiety, the flurry of well-intended productivity tips online is hell. They might work really well for some people, but not for me. To do lists are on the top of my hate list.
 
 ### [Why don&#x27;t you feel you are sensitive to caffeine?](http://olafjanssen.github.io/projects/caffeine)
  *May 2016*
@@ -182,20 +192,25 @@ A simple text replacement tool written in Pascal, showing my passion for languag
 ## The Dark Abyss of Unfinished Content
 
 
+### [Pectus ins and outs](http://olafjanssen.github.io/projects/pectus)
+ *January 2018*
+
+About living and getting rid of pectus excavatum.
+
 ### [Ellai: AI for Ellie](http://olafjanssen.github.io/projects/gitsum)
  *December 2017*
 
 Trying to add AI to Interactive Ellie
 
-### [Project LAIKA: Learning AI by Knowledge Activation](http://olafjanssen.github.io/projects/projectlaika)
- *November 2017*
-
-We introduce Laika: the first dog in the relatively empty AI space of Fontys. It is a toolbox to let students work with AI from a basic level, to accommodate the self-defined learning goals of students and the technology shift in society.
-
 ### [Webpage as a research article](http://olafjanssen.github.io/projects/researchtemplate)
  *November 2017*
 
 We all know there can be beauty in webpages and blogs look like blogs. But there is also beauty in research papers and their typical layout and style. So let&#x27;s create a template to represent your web page as a research paper.
+
+### [Project LAIKA: Learning AI by Knowledge Activation](http://olafjanssen.github.io/projects/projectlaika)
+ *November 2017*
+
+We introduce Laika: the first dog in the relatively empty AI space of Fontys. It is a toolbox to let students work with AI from a basic level, to accommodate the self-defined learning goals of students and the technology shift in society.
 
 ### [Total Tinkle Target](http://olafjanssen.github.io/projects/tinkletarget)
  *October 2017*
@@ -211,6 +226,11 @@ Experiments in AI, Neuroevolution and Reinforcement Learning to learn to catch a
  *September 2017*
 
 An experiment in parsing a corpus of Koine Greek texts (well the New Testament), and trying to automatically create DuoLingo-like lessons from this.
+
+### [Zen and Fitbit](http://olafjanssen.github.io/projects/zenfit)
+ *July 2017*
+
+An experiment with practicing daily Zen meditation and linking to information with my Fitbit.
 
 ### [Balancing game](http://olafjanssen.github.io/projects/zenbalance)
  *May 2017*

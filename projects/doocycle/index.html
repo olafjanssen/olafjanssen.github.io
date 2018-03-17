@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        DooCycle: A To Do app ahead of its time
+    </title>
+    <meta name="description" content="It is not about what you are about To Do, but what you have done and what fun stuff to do next.">
+
+    <meta property="og:title" content="DooCycle: A To Do app ahead of its time">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://olafjanssen.github.io/img/thumbs/doocycle.png">
+    <meta property="og:site_name" content="Portfolio Olaf T.A. Janssen">
+    <meta property="og:description" content="It is not about what you are about To Do, but what you have done and what fun stuff to do next.">
+    <meta property="og:url" content="https://olafjanssen.github.io/projects/doocycle">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/simple-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+
+    <script type="application/javascript" src="/js/prism.js"></script>
+</head>
+
+<body class="typeset">
+
+<nav class="nav-panel">
+    <h1>Olaf T.A. Janssen</h1>
+    <ul>
+        <li>
+            <a href="/about">Me</a>
+        </li>
+        <li>
+            <a href="/">Thingamabobs</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="project-content">
+        <article class="project-full">
+            <a href="/">
+                <div class="project-thumb"
+                     style="background-image:url('../../img/thumbs/doocycle.png'); background-position:center; background-size:cover;"></div>
+            </a>
+            <h1>
+                DooCycle: A To Do app ahead of its time
+            </h1>
+            <p class="project-full-blurp">
+                It is not about what you are about To Do, but what you have done and what fun stuff to do next.
+            </p>
+            <p class="project-full-date">
+                <span class="date">March 2018</span>
+                <span class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_linkedin"></a>
+        </span>
+
+            </p>
+            <div id="cnt-doocycle" class="project-full-content">
+                <h1 id="background">Background</h1>
+<p>I hate To Do lists. With a vengeance. I make them, I break them. Some time ago, I already wrote a <a href="/projects/todohate">rant on To Do lists</a> or apps and created a small script that would fill my calendar with gentle reminders. What still bothers me are those chores that pop up more or less regularly, but not regular enough to be part of my daily routine. Laundry of instance; some weeks I don&#39;t do any, then I do 3 washes in a day, or spread out over the week. Clipping my nails is not a thing I do at a particular day, but more or less once a week or.. I don&#39;t know actually. And when was the last time I tidies the attic? Would it be about time to do it now?</p>
+<h1 id="the-idea">The Idea</h1>
+<p>So the idea is rather simple, by tracking when I did what I can show in an app what is most probably that I would have to do in the near future. It can show me what is overdue, what I did not do in such a long time I might consider it again and what I don&#39;t have to bother about. By using AI, I can make better and better predictions for when something is due. I will have to consider several different cases:</p>
+<ul>
+<li><em>near regular actions</em>; things I do more or less weekly or bi-weekly but not exactly or at least they are not bound to a day of the week for instance.</li>
+<li><em>build-up actions</em>; things that build up to a point that somethings has to be done. Laundry for instance, the pile keeps building up, so that a long period of not doing anything must be compensated by multiple actions in a shorter period to get rid of the laundry pile.</li>
+<li><em>rare festivities</em>; things that are incidental and rare but recurring, such as maybe visiting a museum (or your (grand)parents), you should not be nagged about these things but rather be suggested to you. </li>
+</ul>
+<h1 id="first-prototype">First prototype</h1>
+<p>In the first prototype I hacked together a functional single-user (that&#39;s me!) app with a Cloudstore database and a Bootstrap UI. Its current features:</p>
+<ul>
+<li>add (and remove) actions manually with category and subcategories in a data explorer view</li>
+<li>a dashboard overview with donut graphs to indicate whether I am overdue and what the last time was, ordered by urgency</li>
+<li>quickly add a new action from the dashboard </li>
+<li>the <em>rare festivities</em> are guessed from being grossly overdue and are put on a transparent ignore list</li>
+<li>due times are now estimated from a simple average of previous intervals </li>
+</ul>
+<p><img src="/img/projects/doocycle/doocycle-pr1.png" alt="doocycle-prototype1"></p>
+<p>I have been using it now for a while and it is rather fun and informative. It takes very little time to add existing activities and I am actually reminded and motivated to do certain chores or work again on certain projects.</p>
+<h1 id="plan-for-next-protoype">Plan for next protoype</h1>
+<p>First things to do are:</p>
+<ul>
+<li>add a login and registration to allow other users to play around with it</li>
+<li>show statistics per (sub)category</li>
+<li>try out more sophisticated algorithms (or AI) to predict <em>near regular actions</em> and <em>build-up actions</em></li>
+<li>streamline the flow of making it feel like an actual app</li>
+</ul>
+
+            </div>
+        </article>
+
+</section>
+
+</body>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</html>
